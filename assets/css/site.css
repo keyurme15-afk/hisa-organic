@@ -1,0 +1,868 @@
+:root{--g:#245a42;--cream:#f8f5ec;--ink:#20372d;--muted:#6c7b70}*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:var(--ink);background:var(--cream)}header{position:sticky;top:0;background:#fffdf7ee;backdrop-filter:blur(12px);z-index:5;border-bottom:1px solid #e4e9de}.nav{max-width:1200px;margin:auto;padding:17px 22px;display:flex;justify-content:space-between;align-items:center;gap:15px}.logo{font-size:24px;font-weight:800;color:var(--g)}.logo small{display:block;font-size:10px;letter-spacing:3px;font-weight:500}.nav a{color:inherit;text-decoration:none;margin:0 12px}.btn{background:var(--g);color:white;border:0;padding:12px 18px;border-radius:10px;cursor:pointer;font-weight:700}.hero{background:linear-gradient(115deg,#e5f0e4,#faf6e9);padding:80px 22px}.wrap{max-width:1200px;margin:auto}.hero-grid{display:grid;grid-template-columns:1.2fr 1fr;align-items:center;gap:35px}.eyebrow{letter-spacing:3px;color:var(--g);font-size:12px;font-weight:700}h1{font-size:clamp(38px,5vw,70px);line-height:1.08;margin:15px 0}p{line-height:1.65;color:var(--muted)}.hero-art{min-height:320px;border-radius:28px;background:radial-gradient(circle at 70% 25%,#f8f8e9,transparent 40%),linear-gradient(135deg,#9ec7a9,#477a63);display:grid;place-items:center;box-shadow:0 20px 45px #244c3626}.soap{width:230px;height:175px;border-radius:35px;background:linear-gradient(140deg,#e9fff2a9,#d3f1dd65);border:8px solid #ffffff80;box-shadow:20px 25px 30px #143c2e40;display:grid;place-items:center;color:white;font-size:28px;font-weight:800;text-align:center}.section{padding:65px 22px}.section h2{font-size:36px;margin:0 0 10px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}.feature,.product,.faq{background:white;border:1px solid #e8ebe2;border-radius:18px;padding:22px}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0}.controls input,.controls select,.form input,.form textarea{padding:13px;border:1px solid #ccd7ca;border-radius:10px;font:inherit;width:100%;background:white}.controls input{flex:1;min-width:180px}.controls select{width:auto}.products{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.product{padding:12px;display:flex;flex-direction:column}.thumb{height:165px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--tone,#c9e5d5),#f7f6e9);overflow:hidden}.mini-soap{height:95px;width:125px;border-radius:20px;background:#ffffff70;border:5px solid #ffffff75;box-shadow:12px 15px 20px #1c503d35;display:grid;place-items:center;font-weight:bold;text-align:center;color:#3c6953;font-size:13px;padding:8px}.product h3{margin:16px 4px 4px;font-size:17px}.product p{margin:3px 4px 12px;font-size:13px;flex:1}.product .bottom{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:0 4px 5px}.price{font-weight:800;color:var(--g)}.small{font-size:12px;color:var(--muted)}.cart-button{position:relative}.count{background:#e4ad5a;color:#20372d;padding:2px 6px;border-radius:20px}.overlay{position:fixed;inset:0;background:#0007;z-index:9;display:none}.overlay.open{display:block}.drawer{position:fixed;right:0;top:0;height:100dvh;width:min(460px,100%);background:#fff;z-index:10;transform:translateX(101%);transition:transform .25s;overflow:auto;padding:24px}.drawer.open{transform:translateX(0)}.drawer-top{display:flex;justify-content:space-between;align-items:center}.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:13px 0}.qty{display:flex;gap:8px;align-items:center}.qty button{border:1px solid #ccc;background:white;border-radius:7px;padding:5px 9px;cursor:pointer}.form{display:grid;gap:10px;margin-top:18px}.form label{font-size:13px;font-weight:700}.form textarea{min-height:75px}.wa{position:fixed;bottom:22px;right:22px;background:#25d366;color:white;text-decoration:none;padding:15px 18px;border-radius:40px;font-weight:800;box-shadow:0 8px 20px #0003;z-index:6}footer{background:#193e2f;color:#fff;padding:45px 22px}footer p,footer a{color:#d8e8dd}.insta-header{font-weight:700;color:#a83c72!important}.insta-footer{display:inline-block;padding:10px 14px;border:1px solid #ffffff55;border-radius:9px;text-decoration:none;font-weight:700}@media(max-width:650px){.nav a.insta-header{display:inline-block;margin:0 4px;font-size:12px}.nav{padding:12px 10px;gap:5px}.logo{font-size:17px}.logo small{font-size:8px;letter-spacing:1px}.cart-button{padding:10px 12px}}.notice{background:#f0f6ef;border-radius:10px;padding:12px;font-size:13px;color:#3b5b45}@media(max-width:900px){.products{grid-template-columns:repeat(3,1fr)}}@media(max-width:650px){.nav a{display:none}.hero-grid{grid-template-columns:1fr}.hero{padding:50px 20px}.hero-art{min-height:250px}.features{grid-template-columns:1fr}.products{grid-template-columns:repeat(2,1fr);gap:10px}.product{padding:8px}.thumb{height:135px}.mini-soap{width:95px;height:75px}.section{padding:42px 14px}.section h2{font-size:28px}.product .bottom{flex-wrap:wrap}.wa{bottom:12px;right:12px}}.hero{background:linear-gradient(125deg,#123e2b 0%,#1d6040 54%,#34885c 100%);color:#fff;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;background:#ffffff0c;right:-120px;top:-160px;pointer-events:none}.hero h1{color:#fff}.hero p{color:#e3f4e8}.hero .eyebrow{color:#bce9c6}.hero .btn{background:#f1e9d2;color:#174b32;box-shadow:0 8px 22px #092e1b40}.hero .btn:hover{background:#fff8e6}.hero-art{background:radial-gradient(circle at 70% 25%,#f3ffed80,transparent 40%),linear-gradient(135deg,#8ac59c,#28694b);border:1px solid #ffffff55}.hero .small{color:#d9f0dc}@media(max-width:650px){.hero{padding:48px 18px}.hero h1{font-size:clamp(34px,10vw,49px)}.hero p{font-size:15px}.hero-art{min-height:230px}} .thumb{padding:0!important;overflow:hidden;background:#eef4e9!important}.thumb img{width:100%;height:100%;object-fit:cover;display:block}/* Larger, fully visible product slab photos */
+.thumb{height:255px!important;background:#f5f7f1!important;display:flex;align-items:center;justify-content:center}
+.thumb img{width:100%;height:100%;object-fit:contain!important;object-position:center}
+@media(max-width:650px){.thumb{height:190px!important}.products{gap:12px}.product{padding:8px}}
+@media(max-width:380px){.thumb{height:160px!important}}
+ .thumb{height:225px!important}.thumb img{object-fit:contain!important;width:100%;height:100%}@media(max-width:650px){.thumb{height:180px!important}}  .category-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:30px}.category-card{display:block;background:white;text-decoration:none;color:var(--ink);border:1px solid #dce8dc;border-radius:22px;padding:28px 20px;box-shadow:0 10px 30px #193e2f0a;transition:transform .2s,border-color .2s}.category-card:hover{transform:translateY(-5px);border-color:#6fa58a}.category-icon{height:125px;border-radius:18px;background:linear-gradient(135deg,#e7f1e8,#c6e2d0);display:flex;align-items:center;justify-content:center;color:#20583b;font-size:75px;font-weight:300;position:relative}.category-icon span{position:absolute;font-size:29px;right:28%;top:23%;color:#4a8a60}.category-card h3{font-size:23px;margin:22px 0 6px}.category-card p{font-size:14px;min-height:75px}.category-card strong{color:#20583b;font-size:14px}.back-link{background:none;border:0;color:#20583b;font-size:15px;font-weight:bold;cursor:pointer;margin:0 0 24px;padding:0}.category-contact{display:inline-block;text-decoration:none;margin-top:16px}.category-info{background:#eef5ed}@media(max-width:900px){.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){.category-grid{gap:12px}.category-card{padding:13px;border-radius:15px}.category-icon{height:105px;font-size:55px}.category-card h3{font-size:18px}.category-card p{font-size:12px;min-height:96px}.category-card strong{font-size:12px}} .category-icon{height:auto!important;aspect-ratio:1.45;background:#eaf1e7;overflow:hidden}.category-icon img{width:100%;height:100%;object-fit:cover;display:block}.category-card{padding:12px!important;overflow:hidden}.category-card h3,.category-card p,.category-card strong{margin-left:9px;margin-right:9px}.category-card h3{margin-top:15px}@media(max-width:480px){.category-icon{aspect-ratio:1.15}.category-card{padding:7px!important}.category-card h3{font-size:17px}}  .checkout-button{width:100%;min-height:54px;font-weight:800;font-size:15px;background:#176f43!important;color:white!important;border-radius:13px!important;white-space:normal} .drawer{overflow-y:auto;max-height:100dvh}.cart-line{gap:10px}.drawer .form{padding-bottom:25px} @media(max-width:600px){.drawer{width:min(100vw,430px)!important;padding:18px!important}.checkout-button{font-size:14px}}  .soap-features{font-size:13px;font-weight:700;color:#245a42;line-height:1.5} .fragrance-tools{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.fragrance-tools select,.controls select{min-height:43px;padding:10px;border:1px solid #cbd5c5;border-radius:9px;background:#fff;max-width:100%}.shop-reset{border:1px solid #b6c5b6;background:#fff;color:#205b38;border-radius:9px;padding:10px 15px;cursor:pointer;font-weight:650}.shop-results{margin:12px 0;color:#47604e;font-size:14px}.controls{flex-wrap:wrap}@media(max-width:640px){.fragrance-tools select,.fragrance-tools button,.controls select,.controls button{flex:1 1 145px;min-width:0}.controls input{flex:1 1 100%;min-width:0}}
+
+/* Distinct alternating soap-base card appearances. Cosmetic image tint only;
+   original product photos remain untouched. */
+#productsGrid .soap-visual .thumb{position:relative;isolation:isolate;background:#f6f8f5}
+#productsGrid .soap-visual .thumb img{position:relative;z-index:0;width:100%;height:100%;object-fit:contain}
+#productsGrid .soap-visual .thumb:after{content:"";position:absolute;inset:0;pointer-events:none;z-index:1;mix-blend-mode:multiply;opacity:.33}
+#productsGrid .soap-clear .thumb:after,#productsGrid .soap-white .thumb:after{opacity:0}
+#productsGrid .soap-rose .thumb:after{background:#f1a4ad}
+#productsGrid .soap-green .thumb:after{background:#a7d7a6}
+#productsGrid .soap-yellow .thumb:after{background:#f6dc72;opacity:.4}
+#productsGrid .soap-purple .thumb:after{background:#c5adee}
+#productsGrid .soap-peach .thumb:after{background:#ffc1a1}
+#productsGrid .soap-blue .thumb:after{background:#9bd7ee}
+#productsGrid .soap-pink .thumb:after{background:#f8a8d3}
+#productsGrid .soap-white .thumb{background:#fff}
+#productsGrid .soap-clear .thumb{background:#f2faf7}
+#productsGrid .soap-yellow .thumb{background:#fff9e5}
+#productsGrid .soap-rose .thumb{background:#fff1f2}
+#productsGrid .soap-green .thumb{background:#edf8ed}
+#productsGrid .soap-purple .thumb{background:#f6efff}
+#productsGrid .soap-peach .thumb{background:#fff2e9}
+#productsGrid .soap-blue .thumb{background:#ecf8fd}
+#productsGrid .soap-pink .thumb{background:#fff0f7}
+.fragrance-detail-packs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:12px 0}.fragrance-detail-packs button{background:#eff8ee;border:2px solid #c4d9c5;border-radius:12px;padding:12px 4px;color:#20553b;cursor:pointer;font:inherit}.fragrance-detail-packs button.selected{background:#225d3b;color:white;border-color:#123b25;box-shadow:0 0 0 2px #a3d7ac}.fragrance-detail-packs b{font-size:14px}
+
+:root{--g:#103d2c;--cream:#f8f5ec;--ink:#173a2c;--muted:#65766b}html{scroll-behavior:smooth}body{background:#f7f5ed}header{background:#0e3025f5!important;border-bottom:1px solid #ffffff20!important;color:#f8f6ed!important}.logo,.nav a{color:#f8f6ed!important}.nav .btn{background:#d6b77b!important;color:#173a2c!important}.hero{background:radial-gradient(circle at 82% 18%,#356a4b 0,transparent 40%),linear-gradient(135deg,#09291e,#16452f 70%,#0d3023)!important;color:white!important;padding:95px 22px 110px!important;overflow:hidden}.hero-grid{grid-template-columns:1.05fr .95fr!important;gap:65px!important}.hero .eyebrow{color:#d7c391!important;letter-spacing:2.5px}.hero h1{color:#fff;font-family:Georgia,serif;font-size:clamp(45px,5.4vw,82px);line-height:1.07;letter-spacing:-2px}.hero h1 em{font-weight:400;color:#e6ce9a}.hero p{color:#e2e8dc;font-size:17px;max-width:580px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:29px}.hero-actions a{text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.gold-btn{background:#e3c58a!important;color:#173a2c!important;padding:15px 22px!important}.outline-btn{border:1px solid #c9d9ca8c;color:#fff;padding:15px 22px;border-radius:10px;font-weight:700}.hero-note{font-size:11px;letter-spacing:2px;color:#d1dfd0;margin-top:36px}.hero-note span{color:#e3c58a;margin:0 14px}.hero-showcase{position:relative;border-radius:24px;overflow:hidden;min-height:390px;box-shadow:0 32px 75px #0007;border:1px solid #ffffff30}.hero-showcase img{width:100%;height:100%;min-height:390px;object-fit:cover;display:block}.hero-caption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,#062c22de);color:white;padding:70px 25px 22px;font-weight:800;letter-spacing:2px}.hero-caption span{display:block;font-weight:400;letter-spacing:0;font-size:13px;margin-top:5px}.about-section{background:#f1f0e6}.about-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:70px;align-items:start}.about-section h2{font-family:Georgia,serif;font-size:clamp(34px,3.8vw,55px);line-height:1.15;color:#133d2b}.about-section p{font-size:16px;color:#4d6657}.about-link{display:inline-block;margin-top:12px;color:#124b34;font-weight:800;text-decoration:none;border-bottom:2px solid #b79d68;padding-bottom:6px}#categories{background:#fcfbf6}#categories h2,#why h2{font-family:Georgia,serif;color:#133e2b}.category-card{box-shadow:0 15px 35px #1c422011;transition:transform .2s,box-shadow .2s}.category-card:hover{transform:translateY(-4px);box-shadow:0 20px 38px #1c422025}.feature{border-color:#dce7da;box-shadow:0 8px 28px #173c2010}.btn:hover{filter:brightness(1.06)}
+@media(max-width:800px){.hero{padding:58px 20px 65px!important}.hero-grid{grid-template-columns:1fr!important;gap:35px!important}.hero-showcase,.hero-showcase img{min-height:260px}.hero h1{letter-spacing:-1px}.about-grid{grid-template-columns:1fr;gap:10px}.hero-actions a{flex:1;min-width:145px}.nav{flex-wrap:wrap}.nav>a[href="#about"]{display:none}}
+@media(max-width:480px){.hero-showcase,.hero-showcase img{min-height:220px}.hero h1{font-size:43px}.hero-note{line-height:1.8}.hero-actions a{font-size:13px;padding:13px 11px!important}}
+ .checkout-button{width:100%;min-height:54px;font-weight:800;font-size:15px;background:#176f43!important;color:white!important;border-radius:13px!important;white-space:normal} .drawer{overflow-y:auto;max-height:100dvh}.cart-line{gap:10px}.drawer .form{padding-bottom:25px} @media(max-width:600px){.drawer{width:min(100vw,430px)!important;padding:18px!important}.checkout-button{font-size:14px}}
+
+.product .thumb,.product h3{cursor:pointer}
+.product .thumb:hover img{transform:scale(1.035)}
+.product .thumb img{transition:transform .25s}
+.detail-view{display:none;background:#f8f5ec;padding:35px 18px 75px;min-height:65vh}
+.detail-wrap{max-width:1150px;margin:auto}
+.detail-layout{display:grid;grid-template-columns:1.05fr 1fr;gap:45px;align-items:start;margin-top:20px}
+.detail-photo{background:#fff;border:1px solid #e1e9df;border-radius:22px;overflow:hidden;min-height:380px;display:grid;place-items:center}
+.detail-photo img{width:100%;max-height:550px;object-fit:contain}
+.detail-info{background:white;padding:32px;border-radius:22px;border:1px solid #e4e9e2}
+.detail-info h2{font-size:clamp(27px,3vw,43px);margin:8px 0}
+.detail-info p{color:#526b5b}
+.detail-price{font-size:30px;font-weight:800;color:#1a6546;margin:20px 0}
+.detail-qty{display:flex;align-items:center;gap:12px;margin:20px 0}
+.detail-qty button{background:#eaf1e9;border:0;border-radius:9px;padding:10px 17px;font-size:20px;cursor:pointer}
+.detail-qty strong{min-width:30px;text-align:center}
+.detail-actions{display:flex;flex-wrap:wrap;gap:12px}
+.detail-actions button{flex:1;min-width:155px}
+.detail-facts{margin-top:22px;padding:17px;background:#f1f6f0;border-radius:12px;line-height:1.8;color:#355441}
+@media(max-width:700px){.detail-layout{grid-template-columns:1fr;gap:16px}.detail-photo{min-height:250px}.detail-info{padding:22px}.detail-view{padding:20px 12px 55px}}
+
+.review-area{margin:28px auto 0;max-width:1150px;background:#fff;border:1px solid #e3e9df;border-radius:22px;padding:clamp(18px,4vw,34px)}
+.review-area h3{font-size:25px;margin:0 0 10px;color:#174a33}
+.review-form{display:grid;gap:12px;max-width:670px;margin-top:20px}
+.review-form input,.review-form textarea,.review-form select{width:100%;box-sizing:border-box;padding:13px;border:1px solid #cad8ce;border-radius:10px;font:inherit;background:white;color:#183c2a}
+.review-form textarea{min-height:100px;resize:vertical}
+.review-form label{font-weight:650;color:#28533b}
+.review-item{padding:17px 0;border-bottom:1px solid #e6ebe4}
+.review-item strong{color:#194b34}
+.review-stars{color:#d19b35;font-size:20px;letter-spacing:2px}
+.review-note{font-size:13px;color:#66796c}
+
+footer{background:#0c2b20!important;color:#e8f2e9!important;padding:52px 0 22px!important}
+footer a{color:#d7eadc!important;text-decoration:none}footer a:hover{text-decoration:underline}
+.footer-grid{display:grid;grid-template-columns:1.45fr 1fr 1fr 1.15fr;gap:34px;margin-bottom:32px}
+.footer-grid h3{color:#f1d99e;font-size:16px;margin:0 0 18px}
+.footer-grid p{line-height:1.7;color:#d7e8db}
+.footer-links{display:flex;flex-direction:column;gap:12px}
+.footer-bottom{border-top:1px solid #365648;padding-top:20px;color:#c4d9ca;font-size:13px}
+.policy-page{display:none;background:#fafaf5;min-height:65vh;padding:44px 18px 80px}
+.policy-inner{max-width:930px;margin:auto;background:white;border:1px solid #e2e8df;border-radius:18px;padding:clamp(20px,4vw,44px);color:#243d30}
+.policy-inner h1{font-size:clamp(27px,4vw,39px);color:#15432d;margin:12px 0 20px}
+.policy-inner h2{font-size:20px;color:#185138;margin:25px 0 10px}
+.policy-inner p,.policy-inner li{line-height:1.8}
+.policy-notice{background:#fff5de;padding:14px;border-left:4px solid #c6a253;border-radius:8px}
+@media(max-width:800px){.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}}
+@media(max-width:480px){.footer-grid{grid-template-columns:1fr}footer{padding-top:35px!important}}
+
+.track-page{display:none;background:#f6f7f1;padding:36px 16px 65px;min-height:60vh}.track-wrap{max-width:980px;margin:auto}.track-box{background:white;padding:clamp(18px,4vw,34px);border-radius:20px;border:1px solid #d9e5da;margin:18px 0}.track-box input,.track-box select,.track-box textarea{width:100%;box-sizing:border-box;border:1px solid #c5d5c9;padding:12px;border-radius:9px;font:inherit;margin:5px 0 13px}.track-box label{display:block;font-weight:600}.track-box button{background:#17563b;color:white;border:0;border-radius:10px;padding:13px 20px;font:inherit;font-weight:650;cursor:pointer}.track-result{line-height:1.9;overflow-wrap:anywhere}.track-result img{max-width:100%;max-height:350px;object-fit:contain;border-radius:10px}.track-note{font-size:13px;color:#61766a}.track-box a{color:#176c47;text-decoration:underline}.track-box summary{cursor:pointer;color:#17563b;font-weight:650}.track-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:600px){.track-grid{grid-template-columns:1fr}}
+
+.fragrance-page{padding:42px 0 70px;background:#f8f7f0}.fragrance-page h2{font-size:clamp(30px,4vw,48px);color:#184b34}.fragrance-banner{margin:25px 0;border-radius:16px;overflow:hidden;background:#fff}.fragrance-banner img{width:100%;display:block}.fragrance-search{width:100%;padding:16px;border:1px solid #b7cbbd;border-radius:12px;margin:10px 0 24px;font:inherit}.fragrance-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(175px,1fr));gap:18px}.frag-card{background:white;border:1px solid #dfe8dd;border-radius:17px;padding:18px 12px;text-align:center;box-shadow:0 3px 14px #143c2310}.frag-card h3{font-size:15px;color:#173f2c;min-height:39px;margin:12px 0 4px}.frag-card p{font-size:12px;color:#627569;margin:0 0 12px}.frag-bottle{height:177px;display:flex;flex-direction:column;align-items:center;justify-content:flex-end}.frag-cap{width:51px;height:24px;background:repeating-linear-gradient(90deg,#e9e9e5,#e9e9e5 3px,#d4d4d0 4px);border-radius:7px 7px 2px 2px;border:1px solid #c5c9c3}.frag-neck{width:40px;height:9px;background:#e6e7e1}.frag-body{width:95px;height:138px;border-radius:17px 17px 12px 12px;border:3px solid #e6ece9;background:linear-gradient(90deg,#ffffffaa 0%,transparent 30%,#ffffff55 70%,#ffffffaa 100%),var(--bottle-color);box-shadow:inset -8px 0 12px #ffffff88,0 8px 12px #00000017;display:flex;align-items:center;justify-content:center}.frag-label{background:#fffef8;border:1px solid #e1e5d9;width:80%;padding:8px 2px;color:#174632;font-size:10px;font-weight:800;overflow-wrap:anywhere}.frag-label small{display:block;font-size:7px;letter-spacing:.6px;margin-bottom:4px}.frag-card .btn{font-size:12px;padding:10px 12px;width:100%}@media(max-width:600px){.fragrance-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.frag-card{padding:12px 8px}}
+
+.frag-bottle{background:#f7f8f5!important;display:flex;align-items:center;justify-content:center;min-height:220px;cursor:pointer}.frag-bottle img{width:150px;max-width:88%;height:205px;object-fit:contain}.frag-card h3{cursor:pointer}.frag-card{cursor:pointer}.fragrance-detail{display:none;padding:40px 16px 75px;background:#f7f8f5}.fragrance-detail .detail-layout{max-width:1080px;margin:25px auto}.fragrance-detail .detail-photo{background:#fff}.fragrance-detail .detail-photo img{max-height:470px;width:100%;object-fit:contain}.fragrance-detail .detail-info p{line-height:1.7}.fragrance-detail .detail-info .btn{margin-top:20px}
+
+#ownerDashboard{display:none;background:#f4f7f3;color:#173d2c;padding:35px 15px 80px;min-height:75vh}#ownerDashboard .adm-wrap{max-width:1100px;margin:auto}#ownerDashboard .adm-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:20px 0}#ownerDashboard .adm-stat,#ownerDashboard .adm-panel{background:#fff;border:1px solid #dce8df;border-radius:16px;padding:20px}#ownerDashboard .adm-stat strong{font-size:29px;display:block}#ownerDashboard .adm-stat small{color:#5b7366}#ownerDashboard input,#ownerDashboard select,#ownerDashboard textarea{border:1px solid #bdcec3;border-radius:8px;padding:11px;width:100%;box-sizing:border-box;font:inherit;background:white;color:#163f2b}#ownerDashboard .adm-form{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}#ownerDashboard .adm-form label{display:block;font-size:13px;font-weight:700;margin-bottom:5px}#ownerDashboard button{cursor:pointer;border:0;border-radius:9px;padding:11px 16px;background:#18543b;color:white}#ownerDashboard .adm-table{width:100%;border-collapse:collapse;font-size:14px}#ownerDashboard .adm-table td,#ownerDashboard .adm-table th{text-align:left;padding:11px 8px;border-bottom:1px solid #e0eae3}#ownerDashboard .adm-scroll{overflow-x:auto}#ownerDashboard .adm-note{color:#715923;background:#fff5d8;border-radius:10px;padding:12px;margin:12px 0}#ownerDashboard .adm-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}#ownerDashboard .adm-muted{color:#607869}@media(max-width:700px){#ownerDashboard .adm-grid{grid-template-columns:repeat(2,1fr)}#ownerDashboard .adm-form{grid-template-columns:1fr}#ownerDashboard .adm-stat{padding:14px}}
+
+/* More natural commercial product photography presentation */
+.hero-showcase{overflow:hidden;border-radius:24px;box-shadow:0 22px 60px rgba(0,0,0,.23)}
+.hero-showcase img{display:block;width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.96) contrast(1.04)}
+.category-card{overflow:hidden;transition:transform .22s ease,box-shadow .22s ease}
+.category-card:hover{transform:translateY(-5px);box-shadow:0 16px 38px rgba(0,0,0,.16)}
+.category-icon{overflow:hidden;background:#f5f5f0}
+.category-icon img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;filter:contrast(1.04) saturate(.96)}
+.category-card:hover .category-icon img{transform:scale(1.045)}
+
+.hero-showcase img{object-fit:cover;object-position:center;border-radius:18px;filter:contrast(1.05) saturate(1.06)}
+.category-icon{overflow:hidden;background:#fafbf8}
+.category-icon img{object-fit:cover;object-position:center;filter:contrast(1.04) saturate(1.04);transition:transform .3s ease}
+.category-card:hover .category-icon img{transform:scale(1.035)}
+
+/* Dedicated page views: do not append catalogues/details below the homepage. */
+body[data-page="home"] main > section:not(.hero):not(#about):not(#why):not(#categories):not(#faq){display:none!important}
+body[data-page="home"] main > .hero,body[data-page="home"] main > #about,body[data-page="home"] main > #why,body[data-page="home"] main > #categories,body[data-page="home"] main > #faq{display:block!important}
+body[data-page="soap-list"] main > section:not(#products),body[data-page="soap-detail"] main > section:not(#productDetail),body[data-page="fragrance-list"] main > section:not(#fragranceCatalogue),body[data-page="fragrance-detail"] main > section:not(#fragranceDetail),body[data-page="category-info"] main > section:not(#categoryInfo),body[data-page="info"] main > section,body[data-page="tracking"] main > section,body[data-page="admin"] main > section{display:none!important}
+body[data-page="soap-list"] #products,body[data-page="soap-detail"] #productDetail,body[data-page="fragrance-list"] #fragranceCatalogue,body[data-page="fragrance-detail"] #fragranceDetail,body[data-page="category-info"] #categoryInfo{display:block!important;min-height:72vh}
+body[data-page="info"] #infoPage,body[data-page="tracking"] #trackingPage,body[data-page="admin"] #ownerDashboard{display:block!important;min-height:72vh}
+body[data-page="soap-list"] main,body[data-page="soap-detail"] main,body[data-page="fragrance-list"] main,body[data-page="fragrance-detail"] main{padding-top:12px}
+
+.stock-tools{margin:18px 0}.stock-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}.stock-metrics>div{background:#f0f7f1;border:1px solid #d5e5d8;border-radius:12px;padding:14px}.stock-metrics strong{display:block;font-size:1.5rem;color:#174c34}.stock-metrics small{display:block;color:#52665b}.stock-actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center}.stock-actions input,.stock-actions select{min-height:43px;border:1px solid #b6cbbd;border-radius:9px;padding:8px 12px;max-width:100%}.stock-actions input{flex:1;min-width:175px}.stock-import{display:inline-flex;align-items:center;padding:11px 15px;border-radius:9px;border:1px solid #206243;color:#206243;cursor:pointer;font-weight:700}.stock-note{color:#54645b;font-size:.88rem;margin:12px 0}.stock-hidden{display:none!important}button:disabled{cursor:not-allowed;opacity:.55}@media(max-width:650px){.stock-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.stock-actions{align-items:stretch}.stock-actions input,.stock-actions select{width:100%;flex:auto}.stock-actions .btn,.stock-import{justify-content:center}.product .bottom{flex-wrap:wrap;gap:10px}.product .bottom button{min-height:42px}}
+
+/* Hisa Organic: responsive phone/tablet/laptop refinement */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:85px;-webkit-text-size-adjust:100%}
+body{min-width:0;overflow-x:hidden}
+img,video,svg{max-width:100%}
+button,input,select,textarea{font:inherit}
+button,a,[role="button"]{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #61ae80;outline-offset:2px}
+.nav,.wrap,main,section{min-width:0}
+.nav{gap:12px;flex-wrap:wrap}
+.hero-grid,.detail-grid,.products,.category-grid{min-width:0}
+.product,.category-card,.detail-view,.fragrance-card{min-width:0}
+.product img,.category-icon img{display:block}
+@media(max-width:900px){
+ .nav{padding:12px 16px;justify-content:space-between}
+ .nav nav{order:3;flex-basis:100%;display:flex;gap:14px;overflow-x:auto;white-space:nowrap;padding:6px 0;scrollbar-width:thin}
+ .nav>a{display:none}
+ .hero-grid{grid-template-columns:1fr!important;gap:24px!important}
+ .hero-art{width:100%;max-width:680px;margin:auto}
+ .category-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:600px){
+ .wrap{width:100%!important;max-width:100%!important;padding-left:16px!important;padding-right:16px!important}
+ .nav{gap:8px}
+ .logo{font-size:18px;line-height:1.15}
+ .logo small{font-size:9px;letter-spacing:1px}
+ .nav .cart-button{min-height:44px;padding:9px 13px;font-size:13px}
+ .nav nav{gap:18px;font-size:13px}
+ .hero{padding:34px 0!important}
+ .hero h1{font-size:clamp(30px,9vw,46px)!important;line-height:1.1}
+ .hero p{font-size:14px!important;line-height:1.65}
+ .hero-actions{display:flex;flex-wrap:wrap;gap:10px}
+ .hero-actions a{min-height:44px;display:inline-flex;align-items:center;justify-content:center}
+ .hero-art{min-height:205px!important}
+ .section{padding-top:35px!important;padding-bottom:35px!important}
+ .category-grid{gap:10px!important}
+ .category-card{border-radius:14px!important;padding:7px!important}
+ .category-card h3{font-size:15px!important;overflow-wrap:anywhere}
+ .category-card p{font-size:12px!important;min-height:0!important;line-height:1.45}
+ .category-card strong{font-size:12px!important}
+ .products{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+ .product{padding:8px!important;border-radius:12px}
+ .thumb{height:145px!important}
+ .product h3{font-size:14px!important;overflow-wrap:anywhere}
+ .product .btn,.product button{max-width:100%;white-space:normal;min-height:42px}
+ .drawer{position:fixed!important;max-width:100vw!important;width:min(100vw,430px)!important;max-height:100dvh!important;overflow-y:auto!important;overscroll-behavior:contain}
+ .drawer input,.drawer textarea,.drawer select{max-width:100%;font-size:16px}
+ .detail-view img{max-height:370px;object-fit:contain}
+ .fragrance-page,.fragrance-detail{max-width:100%;overflow-wrap:anywhere}
+}
+@media(max-width:360px){.products{grid-template-columns:1fr!important}.thumb{height:210px!important}.category-grid{grid-template-columns:1fr!important}}
+@media(min-width:1200px){.wrap{max-width:1180px}.hero-grid{gap:42px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+.tier-picker{display:flex;flex-wrap:wrap;gap:10px;margin:12px 0 20px}.tier-picker button{border:2px solid #b9d0be;border-radius:12px;background:#f5faf5;color:#184b31;padding:12px 16px;cursor:pointer;font-size:14px;min-width:105px}.tier-picker button.selected,.tier-picker button:hover{border-color:#17633b;background:#e2f4e7}.tier-picker b{font-size:17px}.product .small{font-size:12px}@media(max-width:480px){.tier-picker button{flex:1;min-width:88px;padding:10px 5px}}
+
+.liquid-six{margin:26px 0 18px}.liquid-six-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.liquid-six-card{border:1px solid #e0e8e2;border-radius:18px;background:#fff;overflow:hidden;padding:15px;text-align:center;box-shadow:0 5px 20px #0b41200c}.liquid-six-card h3{font-size:19px;color:#15452b;margin:12px 0 5px}.liquid-six-card p{color:#647268;font-size:13px;margin:0 0 15px}.liquid-enquire{display:block;background:#075b36;color:#fff!important;border-radius:10px;padding:12px 8px;font-weight:700;text-decoration:none}.liquid-bottle-wrap{height:235px;display:flex;justify-content:center;align-items:end;background:linear-gradient(135deg,#f4faf4,#fdfcf7);border-radius:13px;padding-bottom:14px}.liquid-bottle{width:110px;height:170px;border:3px solid #ffffff99;border-radius:16px 16px 21px 21px;position:relative;background:linear-gradient(105deg,#ffffff7c,var(--liquid-color) 30%,var(--liquid-color) 70%,#ffffff88);box-shadow:inset 10px 0 14px #fff8,inset -8px 0 13px #28422c25,5px 10px 16px #28422c22}.liquid-bottle.pearly{background:linear-gradient(110deg,#fff,var(--liquid-color) 40%,#fff5 65%,var(--liquid-color));}.liquid-neck{position:absolute;bottom:100%;height:21px;width:42px;left:31px;background:#f7f7f5;border-radius:5px}.liquid-pump{position:absolute;bottom:calc(100% + 18px);left:28px;width:50px;height:24px;border-radius:5px 5px 0 0;background:#f8f8f8;box-shadow:0 2px 5px #9995}.liquid-pump:after{content:'';position:absolute;left:25px;top:0;width:55px;height:9px;border-radius:5px;background:#fff}.liquid-label{position:absolute;left:7px;right:7px;top:55px;background:#fffffff0;padding:13px 2px;display:flex;flex-direction:column;gap:4px;color:#185b37;border-radius:3px}.liquid-label small{font-size:9px;letter-spacing:.7px}.liquid-label strong{font-size:13px}.liquid-label span{font-size:9px;letter-spacing:1px}@media(max-width:700px){.liquid-six-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.liquid-six-card{padding:9px}.liquid-six-card h3{font-size:15px}.liquid-bottle-wrap{height:200px}.liquid-bottle{transform:scale(.84);transform-origin:bottom}.liquid-enquire{font-size:12px}}
+
+#liquidSix .liquid-six-card{display:flex;flex-direction:column;align-items:stretch;text-align:center;padding:20px;border:1px solid #e4e8e2;border-radius:18px;background:#fff;box-shadow:0 5px 20px rgba(0,50,24,.06)}
+#liquidSix .liquid-six-card h3{margin:14px 0 6px}#liquidSix .liquid-price{font-size:1.55rem;font-weight:800;color:#07552e;margin:3px 0}#liquidSix .liquid-price-note{font-size:.83rem;color:#647067;margin:0 0 12px}#liquidSix .liquid-order-row{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:auto;padding:9px 0;border-top:1px solid #e6eee8}#liquidSix .liquid-order-row label{font-size:.87rem;font-weight:600}#liquidSix .liquid-order-qty{width:86px;max-width:45%;padding:9px;border:1px solid #bacbc0;border-radius:9px;text-align:center;font:inherit}#liquidSix .liquid-order-total{font-weight:700;margin:8px 0 12px}#liquidSix .liquid-buy-btn{width:100%;border:0;cursor:pointer;display:block;text-align:center;padding:12px 10px;border-radius:10px;background:#075b33;color:white;font-weight:700;font-size:.94rem}#liquidSix .liquid-buy-btn:hover{background:#087b42}@media(max-width:640px){#liquidSix .liquid-six-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#liquidSix .liquid-six-card{padding:10px}#liquidSix .liquid-buy-btn{font-size:.8rem}#liquidSix .liquid-order-row{flex-wrap:wrap}#liquidSix .liquid-order-qty{width:100%}}
+
+.hisa-extra-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:18px;margin:25px 0}
+.hisa-extra-card{border:1px solid #dce7dc;border-radius:15px;padding:19px;background:white;box-shadow:0 3px 12px #1232}
+.hisa-extra-card h3{font-size:19px;margin:8px 0}.hisa-extra-card p{font-size:13px;color:#596b60}
+.hisa-extra-card button,.hisa-frag-cart{background:#19583c;color:white;border:0;border-radius:9px;padding:11px 15px;font-weight:700;cursor:pointer;margin-top:9px}
+.hisa-extra-card input{max-width:85px;padding:8px;border:1px solid #bac8bc;border-radius:7px}
+.hisa-extra-card .hisa-qty{display:flex;align-items:center;gap:8px}
+.hisa-extra-card .hisa-qty button{margin:0;padding:7px 12px}
+.hisa-cart-quote{background:#f5f9f4;border:1px solid #d7e5d7;border-radius:9px;padding:10px;margin:8px 0}
+.hisa-frag-cart{display:block;width:100%;margin-top:8px}
+
+/* New responsive full-width soap-base hero */
+section.hero{padding:0!important;background:#f8faf5!important;min-height:0!important;overflow:hidden}
+section.hero .hisa-new-hero-banner{display:block;width:100%;max-width:1600px;margin:0 auto;line-height:0;cursor:pointer}
+section.hero .hisa-new-hero-banner img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:650px){section.hero .hisa-new-hero-banner img{width:100%;height:auto;min-height:0}}
+
+.hisa-powder-packs{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.hisa-powder-pack{flex:1;min-width:64px;padding:10px 8px;border:1px solid #b8c9b6;border-radius:9px;background:#fff;color:#164f2b;cursor:pointer;font-weight:700}.hisa-powder-pack:nth-child(1){background:#22653e;color:#fff;border-color:#22653e}.hisa-powder-pack:nth-child(2){background:#a5d6ae;color:#16452c;border-color:#8dc59a}.hisa-powder-pack:nth-child(3){background:#def2df;color:#16452c;border-color:#c5e5c9}.hisa-powder-pack.selected{outline:3px solid #165c36;outline-offset:2px;box-shadow:0 0 0 2px #fff inset}.hisa-powder-pack.selected::after{content:" ✓";font-weight:900}.hisa-powder-actions{display:block;margin-top:12px}.hisa-powder-actions.is-active{display:block}.hisa-powder-pack:focus-visible{outline:3px solid #94c6a2}
+
+/* hisa-hero-slightly-smaller */
+/* Slight inset and smaller hero banner on desktop and mobile */
+.hero .hisa-new-hero-banner{width:97%!important;max-width:1520px!important;margin:0 auto!important;border-radius:16px;overflow:hidden;}
+.hero .hisa-new-hero-banner img{width:100%!important;height:auto!important;display:block!important;object-fit:contain!important;}
+@media(max-width:650px){.hero .hisa-new-hero-banner{width:98%!important;border-radius:10px;}}
+
+.hisa-liquid-claims{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 10px}.hisa-liquid-claims span{display:inline-block;border-radius:20px;padding:5px 10px;font-size:12px;font-weight:700;line-height:1.4}.hisa-claim-type{background:#e0f3e7;color:#155a35}.hisa-claim-free{background:#f0f4eb;color:#365a36}
+
+/* Mobile: two cards side-by-side instead of stacked */
+@media (max-width: 650px){
+.category-grid,.products{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}
+.category-card,.product{min-width:0!important;width:auto!important;margin:0!important}
+.category-card{padding:12px 9px!important;border-radius:13px!important}
+.category-icon{height:95px!important;font-size:48px!important}
+.category-card h3,.product h3{font-size:14px!important;overflow-wrap:anywhere}
+.category-card p{font-size:11px!important;line-height:1.4}
+.product .thumb{height:145px!important}
+}
+@media(max-width:360px){.category-grid,.products{gap:7px!important}.category-card{padding:9px 7px!important}.product .thumb{height:120px!important}}
+
+/* Fragrance category: show all three bottles without edge cropping on phones. */
+.category-card:has(img[alt="Rose, Kesar Chandan and Lavender fragrance bottles"]) .category-icon{background:#fff4f5!important;overflow:hidden!important}
+.category-card img[alt="Rose, Kesar Chandan and Lavender fragrance bottles"]{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important;filter:none!important}
+.category-card:hover img[alt="Rose, Kesar Chandan and Lavender fragrance bottles"]{transform:none!important}
+@media(max-width:650px){
+.category-card:has(img[alt="Rose, Kesar Chandan and Lavender fragrance bottles"]) .category-icon{height:115px!important;padding:5px 3px!important;box-sizing:border-box!important}
+.category-card img[alt="Rose, Kesar Chandan and Lavender fragrance bottles"]{width:100%!important;height:100%!important;object-fit:contain!important}
+}
+
+/* hisa-mobile-polish */
+@media(max-width:650px){html{scroll-padding-top:72px}body{overflow-x:hidden;-webkit-text-size-adjust:100%}.nav{min-height:62px;padding:10px 12px;gap:8px}.logo{font-size:16px;line-height:1.15;min-width:0}.logo small{font-size:8px;letter-spacing:.7px}.cart-button{white-space:nowrap;min-height:42px;padding:10px 13px}.section{padding:30px 12px}.section h2{font-size:clamp(22px,6vw,28px);line-height:1.2}.products,.category-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}.product,.frag-card{min-width:0;overflow:hidden;border-radius:14px}.product h3,.frag-card h3{overflow-wrap:anywhere;font-size:14px;line-height:1.3}.product p{font-size:12px;line-height:1.4}.product .bottom{gap:7px}.product .btn,.product button{max-width:100%;white-space:normal}.thumb{height:auto!important;aspect-ratio:1.12;min-height:105px}.thumb img{object-fit:contain!important}.controls{gap:8px}.controls input,.controls select{min-width:0;width:100%;font-size:16px}.drawer{width:100%;max-width:100%;padding:16px 14px calc(25px + env(safe-area-inset-bottom));overscroll-behavior:contain}.drawer-top{position:sticky;top:-16px;background:white;z-index:2;padding:12px 0;border-bottom:1px solid #eee}.drawer button,.drawer input,.drawer select,.drawer textarea{min-height:42px}.drawer input,.drawer select,.drawer textarea{font-size:16px}.cart-line{min-width:0;flex-wrap:wrap}.wa{right:12px;bottom:calc(12px + env(safe-area-inset-bottom));padding:12px 14px;font-size:13px}.hero{padding:20px 12px}.hisa-new-hero-banner img{width:100%;height:auto;display:block}.category-grid img{max-width:100%;object-fit:contain}button,a,input,select{touch-action:manipulation}}@media(max-width:360px){.nav{padding:9px 8px}.logo{font-size:14px}.cart-button{padding:9px 10px}.products,.category-grid{gap:7px!important}.product{padding:7px}}
+
+/* Soap Base: hide category and featured sort controls while retaining JS state */
+#category, #soapSort { display:none !important; }
+
+/* Mobile performance and touch usability: safe, presentation-only overrides. */
+@media (max-width: 767px) {
+  html { -webkit-text-size-adjust: 100%; }
+  body { overflow-x: hidden; }
+  img { max-width: 100%; height: auto; }
+  button, select, input, textarea, a { touch-action: manipulation; }
+  input[type="number"] { font-size: 16px; }
+  .category-grid, .fragrance-grid, .liquid-six-grid { min-width: 0; }
+  .category-grid > *, .fragrance-grid > *, .liquid-six-grid > * { min-width: 0; }
+  .frag-card, .liquid-six-card, .hisa-extra-card { overflow-wrap: anywhere; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+.liquid-six-card .hisa-milky-photo{display:flex;align-items:center;justify-content:center;overflow:hidden;background:#fff}.liquid-six-card .hisa-milky-photo img{display:block;width:100%;height:100%;max-height:240px;object-fit:contain;object-position:center}@media(max-width:600px){.liquid-six-card .hisa-milky-photo img{max-height:175px}}
+
+#liquidSix .liquid-six-card{cursor:pointer;touch-action:manipulation}
+#liquidSix .liquid-six-card .liquid-order-row,#liquidSix .liquid-six-card .liquid-order-total,#liquidSix .liquid-six-card .liquid-buy-btn{display:none!important}
+#hisaLiquidDetail{position:fixed;inset:0;z-index:999999;background:#0009;display:none;align-items:center;justify-content:center;padding:12px}
+#hisaLiquidDetail.open{display:flex}
+#hisaLiquidDetail .hld-panel{background:white;border-radius:18px;max-width:510px;width:100%;max-height:92dvh;overflow:auto;padding:20px;box-sizing:border-box;color:#173c28}
+#hisaLiquidDetail .hld-close{float:right;border:0;background:#eaf3ed;border-radius:9px;padding:8px 13px;font-size:22px;cursor:pointer}
+#hisaLiquidDetail h2{font-size:23px;margin:12px 0}#hisaLiquidDetail p{font-size:14px;line-height:1.65;color:#455b4e}
+#hisaLiquidDetail .hld-tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:16px 0}
+#hisaLiquidDetail .hld-tier{background:white;border:1px solid #b6d4c0;border-radius:11px;padding:12px 3px;cursor:pointer;color:#174c30;font-size:13px}
+#hisaLiquidDetail .hld-tier.active{background:#e2f5e8;border:2px solid #08763d}
+#hisaLiquidDetail .hld-qty{display:flex;align-items:center;gap:12px;justify-content:center;margin:13px 0}
+#hisaLiquidDetail .hld-qty button{width:44px;height:44px;border:1px solid #b6d4c0;background:#edf7f0;border-radius:10px;font-size:24px}
+#hisaLiquidDetail .hld-qty input{width:86px;padding:11px 4px;text-align:center;font-size:18px;border:1px solid #b6d4c0;border-radius:10px}
+#hisaLiquidDetail .hld-add{width:100%;background:#075c34;color:white;border:0;border-radius:11px;padding:14px;font-size:16px;font-weight:bold}
+
+/* hisa-mobile-all-functions-v2 */
+/* Accessible touch targets, resilient two-column product layout */
+@media(max-width:767px){
+ html{scroll-padding-top:74px}body{max-width:100%;overflow-x:clip}
+ .category-grid,.products,.hisa-extra-grid,.fragrance-grid,.liquid-six-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:9px!important}
+ .category-grid>*,.products>*,.hisa-extra-grid>*,.fragrance-grid>*,.liquid-six-grid>*{min-width:0!important;max-width:100%!important}
+ .hisa-extra-card{padding:11px 8px!important;overflow:visible!important;overflow-wrap:anywhere}
+ .hisa-extra-card h3{font-size:14px!important;line-height:1.3}
+ .hisa-extra-card p{font-size:11px!important;line-height:1.4}
+ .hisa-powder-packs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px!important;margin:10px 0!important}
+ .hisa-powder-pack{min-width:0!important;width:100%;min-height:44px!important;padding:8px 2px!important;font-size:12px!important;line-height:1.2}
+ .hisa-powder-actions{display:block!important;visibility:visible!important;margin-top:10px!important}
+ .hisa-powder-actions .hisa-qty{display:grid!important;grid-template-columns:42px minmax(0,1fr) 42px;align-items:center;gap:4px!important;width:100%}
+ .hisa-powder-actions .hisa-qty button{width:42px!important;min-width:0!important;height:44px!important;min-height:44px!important;padding:0!important;font-size:22px!important;touch-action:manipulation}
+ .hisa-powder-actions .hisa-qty input{width:100%!important;min-width:0!important;max-width:100%!important;height:44px!important;min-height:44px!important;padding:5px 1px!important;text-align:center;font-size:16px!important;box-sizing:border-box}
+ .hisa-powder-actions>button{display:block!important;width:100%!important;min-height:46px!important;margin-top:9px!important;white-space:normal!important;padding:10px 5px!important;font-size:13px!important;touch-action:manipulation}
+ .hisa-extra-card button,.hisa-extra-card input,.hld-tier,.hld-add,.hld-close,.frag-card button,.liquid-six-card button{touch-action:manipulation}
+ .drawer{width:100%!important;max-width:100%!important;max-height:100dvh;overscroll-behavior:contain}
+ .drawer input,.drawer textarea,.drawer select{max-width:100%;font-size:16px!important}
+ #hisaLiquidDetail{padding:8px!important}
+ #hisaLiquidDetail .hld-panel{max-height:calc(100dvh - 16px)!important;padding:16px!important;overscroll-behavior:contain}
+ #hisaLiquidDetail .hld-tier{min-height:58px!important;padding:9px 3px!important}
+ #hisaLiquidDetail .hld-add{min-height:48px!important}
+ .wa{bottom:calc(12px + env(safe-area-inset-bottom))!important}
+}
+@media(max-width:360px){.hisa-extra-grid{gap:6px!important}.hisa-extra-card{padding:9px 6px!important}.hisa-powder-pack{font-size:11px!important}}
+
+.hisa-paraffin-photo{display:block;width:100%;height:155px;object-fit:contain;margin:0 auto 8px;border-radius:9px}@media(max-width:480px){.hisa-paraffin-photo{height:130px}}
+
+.hisa-candle-image-wrap{position:relative;width:100%;max-width:220px;margin:auto}.hisa-candle-image-wrap img{display:block;width:100%;height:auto;object-fit:contain}.hisa-candle-brand{position:absolute;z-index:1;top:24%;left:50%;transform:translateX(-50%);white-space:nowrap;font-size:clamp(9px,2vw,13px);font-weight:800;color:#155b34;background:rgba(255,255,255,.94);border:1px solid #27864d;border-radius:20px;padding:3px 8px}
+
+/* Premium mobile refinements: isolated to presentation, preserving product logic */
+:root{--g:#17603e;--ink:#193a2a;--cream:#f8faf7}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:76px}
+body{overflow-x:hidden;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+button,input,select,textarea{font:inherit}
+button,a,[role="button"]{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #4aa978;outline-offset:2px}
+img{max-width:100%;height:auto}
+@media(max-width:680px){
+  body{font-size:15px}
+  .nav{padding:11px 13px;gap:8px}
+  .logo{font-size:19px}
+  .hero{padding:34px 14px}
+  .wrap{width:100%;padding-left:12px;padding-right:12px}
+  button,input[type="button"],input[type="submit"]{min-height:42px}
+  input[type="number"]{min-width:48px;font-size:16px;max-width:100%}
+  .btn{padding:11px 13px;border-radius:11px}
+  .card,.product-card,.frag-card{min-width:0;overflow-wrap:anywhere}
+  .card img,.product-card img,.frag-card img{object-fit:contain}
+  [class*="modal"],[class*="detail"]{max-width:100vw}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+ .hisa-herbal-photo{display:block;width:100%;height:210px;object-fit:contain;background:#fff;border-radius:12px;margin:0 auto 10px}@media(max-width:600px){.hisa-herbal-photo{height:165px}}
+
+/* hisa-mobile-performance-v2 */
+/* Keep the original product catalogue, checkout, and navigation logic unchanged. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;scroll-behavior:auto}
+img{max-width:100%;height:auto;object-fit:contain}
+button,input,select,textarea{font:inherit}
+button,a,[role="button"]{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button{cursor:pointer}
+@media(max-width:600px){body{overflow-x:hidden}input,select,textarea{font-size:16px!important}button{min-height:40px}img{max-width:100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* hisa-footer-social-style */
+.hisa-footer-social{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}.hisa-footer-social a,.hisa-facebook-pending{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.3);border-radius:12px;padding:10px 14px;font-weight:600;font-size:14px;line-height:1.4}.hisa-footer-social a{color:inherit;text-decoration:none}.hisa-footer-social a:hover,.hisa-footer-social a:focus-visible{background:rgba(255,255,255,.12);outline-offset:3px}.hisa-facebook-pending{opacity:.65;cursor:default}.hisa-facebook-pending small{font-weight:400}@media(max-width:480px){.hisa-footer-social{gap:8px}.hisa-footer-social a,.hisa-facebook-pending{padding:10px;font-size:13px}}
+
+.hisa-menu-wrap{position:relative;margin-left:auto;z-index:9999}.hisa-menu-toggle{width:46px;height:46px;border:1px solid #d6e5d8;border-radius:12px;background:white;color:#145d31;font-size:30px;line-height:1;cursor:pointer}.hisa-menu-panel{position:absolute;right:0;top:calc(100% + 8px);width:min(285px,calc(100vw - 28px));max-height:75vh;overflow-y:auto;background:white;border:1px solid #dce8dc;border-radius:15px;box-shadow:0 12px 38px #0002;padding:9px;z-index:99999}.hisa-menu-panel[hidden]{display:none!important}.hisa-menu-panel button{display:block;width:100%;padding:13px 14px;text-align:left;border:0;border-radius:8px;background:white;color:#183a26;font:inherit;cursor:pointer}.hisa-menu-panel button:hover,.hisa-menu-panel button:focus{background:#eaf5ed}
+
+/* Hisa Organic: bright, clean mobile palette; visual-only override */
+:root{--cream:#ffffff;--ink:#173d2e;--muted:#587367}
+body{background:#ffffff!important;color:#173d2e}
+@media(max-width:700px){
+ body{background:#ffffff!important}
+ .hero{background:linear-gradient(135deg,#e9fff1 0%,#f7fff9 55%,#ffffff 100%)!important;color:#173d2e!important;padding-top:48px!important;padding-bottom:55px!important}
+ .hero h1{color:#154f37!important;text-shadow:none!important}
+ .hero h1 em{color:#228b59!important}
+ .hero p{color:#476b58!important}
+ .hero .eyebrow,.hero-note{color:#276d49!important}
+ .hero-note span{color:#258458!important}
+ .hero .outline-btn{color:#17613f!important;border-color:#83bda0!important}
+ .section,.detail-view,.about-section{background:#ffffff!important}
+ .feature,.product,.faq,.detail-info,.detail-photo{background:#ffffff!important;border-color:#dceee2!important}
+ .thumb,.product .thumb{background:#f5fff8!important}
+ .category-card,.category-tile{border-color:#dceee2}
+}
+
+#hisaCheckoutStep[hidden]{display:none!important}#drawer.hisa-checkout-mode [data-hisa-cart-stage="cart"],#drawer.hisa-checkout-mode #hisaProceedCheckout{display:none!important}#drawer.hisa-checkout-mode #hisaCheckoutStep{display:block!important}#hisaProceedCheckout{background:#167a48;color:#fff}
+
+/* hisa-premium-mobile-v2 */
+:root{--g:#146c49;--cream:#f8fcf9;--ink:#17382b;--muted:#5b7167;--premium-line:#dcebe2;--premium-shadow:0 8px 28px rgba(21,76,51,.075)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:#f8fcf9;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+header{background:rgba(255,255,255,.96);border-bottom:1px solid #e1eee5;box-shadow:0 3px 14px rgba(15,69,42,.045)}
+.logo{letter-spacing:-.6px;color:#12633e}
+.hero{background:linear-gradient(135deg,#effff4 0%,#f8fff9 52%,#ffffff 100%)}
+.hero-art{box-shadow:0 18px 40px rgba(25,91,55,.14)}
+.section h2{color:#164c35;letter-spacing:-.65px}
+.feature,.product,.faq,.category-card{border-color:var(--premium-line);background:#fff;box-shadow:var(--premium-shadow);transition:box-shadow .18s ease,transform .18s ease,border-color .18s ease}
+.product:hover,.category-card:hover{border-color:#a9d4b9;box-shadow:0 12px 32px rgba(20,90,55,.13)}
+.btn,button{touch-action:manipulation}
+.btn{background:#157447;border-radius:12px;min-height:43px;box-shadow:0 3px 10px rgba(13,100,56,.13)}
+.btn:active,.category-card:active{transform:scale(.985)}
+input,select,textarea{font-size:16px;max-width:100%}
+.thumb{background:linear-gradient(145deg,#f1faf3,#ffffff);border-radius:14px}
+.thumb img,.product img,.category-card img{max-width:100%;object-fit:contain}
+.product h3{color:#204735;line-height:1.3}
+.price{color:#126d42}
+:focus-visible{outline:3px solid #37a56c;outline-offset:3px}
+@media(max-width:650px){
+ body{background:#fbfefc}
+ header{backdrop-filter:none}
+ .nav{padding:12px 14px;gap:8px;min-height:62px}
+ .logo{font-size:21px;line-height:1.1}
+ .hero{padding:42px 16px 45px;background:linear-gradient(155deg,#edfff2,#fff 80%)}
+ .hero-grid{gap:20px}
+ .hero h1,h1{letter-spacing:-1.2px}
+ .section{padding:42px 14px}
+ .section h2{font-size:clamp(25px,7vw,32px);line-height:1.15}
+ .products,.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ .product{padding:9px;border-radius:15px;min-width:0}
+ .product h3{font-size:14px;margin:11px 3px 5px;overflow-wrap:anywhere}
+ .product p{font-size:12px;line-height:1.5;margin:3px 3px 10px}
+ .product .bottom{flex-wrap:wrap;gap:7px}
+ .thumb{height:165px!important;border-radius:11px}
+ .feature,.faq{padding:17px;border-radius:15px}
+ .btn{min-height:44px;padding:11px 13px}
+ .controls{gap:9px}
+ .controls input,.controls select{min-width:0}
+ .drawer{max-width:100vw}
+}
+@media(max-width:380px){.products,.category-grid{gap:9px}.product{padding:7px}.thumb{height:145px!important}.product h3{font-size:13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.product,.category-card{transition:none}}
+
+/* hisa-premium-final-polish */
+/* Hisa Organic premium visual refinement — preserves all application logic */
+:root{--g:#145b37;--cream:#f7faf7;--ink:#173829;--muted:#64756b;--premium-line:#e2ece5;--premium-shadow:0 10px 32px rgba(17,65,39,.08)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:linear-gradient(180deg,#fbfefb 0%,#f4faf5 55%,#fff 100%);color:var(--ink);font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;line-height:1.55;overflow-x:hidden}
+header{background:rgba(255,255,255,.96)!important;border-bottom:1px solid var(--premium-line)!important;box-shadow:0 3px 18px rgba(10,60,35,.055);backdrop-filter:blur(14px)}
+.nav{max-width:1200px;min-height:70px;gap:12px}
+.logo{letter-spacing:-.65px}
+.btn,button,.checkout-button{transition:background-color .2s ease,box-shadow .2s ease,transform .2s ease;touch-action:manipulation}
+.btn:hover,.checkout-button:hover{box-shadow:0 8px 22px rgba(21,94,54,.18)}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #72c897!important;outline-offset:3px}
+.hero{background:linear-gradient(120deg,#f1fbf2 0%,#fff 55%,#e8f5eb 100%)!important}
+.hero-grid{max-width:1200px;margin:auto}
+.section{padding-top:clamp(36px,5vw,76px);padding-bottom:clamp(36px,5vw,76px)}
+.section h2,.section-title{letter-spacing:-.035em;line-height:1.17;color:#15462d}
+.category-card,.product-card,.card,.detail-view,.fragrance-detail{border:1px solid #e2ece5;border-radius:18px;box-shadow:var(--premium-shadow);background:#fff}
+.category-card{overflow:hidden;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease}
+.category-card:hover{transform:translateY(-3px);box-shadow:0 15px 36px rgba(18,75,43,.13);border-color:#b7d9c2}
+.category-card img,.product-card img{max-width:100%;object-fit:contain}
+input,textarea,select{max-width:100%;border-radius:11px;accent-color:#176d41}
+footer{background:linear-gradient(145deg,#103d28,#174d34)!important;color:#f4fff7!important}
+footer a{color:#dcffe6!important}
+img{height:auto}
+@media(max-width:700px){
+ body{background:#f9fdfa!important}
+ .nav{min-height:62px;padding:10px 14px}
+ .hero{padding:24px 12px 30px!important}
+ .section{padding:34px 14px!important}
+ .wrap{width:100%;max-width:100%}
+ .category-card,.product-card,.card{border-radius:15px;box-shadow:0 5px 18px rgba(17,75,42,.075)}
+ .btn,button{min-height:42px}
+ .category-card:active{transform:scale(.99)}
+ h1,h2,h3{overflow-wrap:break-word}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* hisa-header-contrast-fix */
+/* Ensure the white premium header never inherits white-on-white logo text. */
+header { background:#ffffff !important; color:#16452e !important; border-bottom:1px solid #dce9df !important; }
+header .nav .logo { color:#125638 !important; opacity:1 !important; text-shadow:none !important; }
+header .nav .logo small { color:#537a61 !important; opacity:1 !important; }
+header .nav a, header .nav nav a { color:#174b34 !important; }
+header .hisa-menu-toggle { color:#155b39 !important; background:#f8fcf9 !important; border:1px solid #cfe2d5 !important; }
+@media(max-width:650px){header .nav{min-height:78px}header .nav .logo{font-size:20px!important;line-height:1.12!important}header .nav .logo small{font-size:9px!important;letter-spacing:1.4px!important;margin-top:4px}}
+
+/* hisaSearchStyles */
+.hisa-global-search{background:#f5faf6;padding:20px 16px 26px;border-bottom:1px solid #dbe9df}.hisa-search-inner{max-width:1040px;margin:auto}.hisa-search-inner>label{display:block;font-size:17px;font-weight:800;color:#145437;margin-bottom:10px}.hisa-search-field{display:flex;align-items:center;gap:10px;background:#fff;border:1.5px solid #bddbc7;border-radius:15px;padding:0 14px;box-shadow:0 7px 24px #164f2a12}.hisa-search-field:focus-within{border-color:#16804b;box-shadow:0 0 0 3px #1d8a5020}.hisa-search-field span{font-size:29px;color:#20764b}.hisa-search-field input{min-width:0;flex:1;width:100%;padding:16px 0;border:0;outline:0;background:transparent;color:#173b2b;font-size:16px}.hisa-search-field button{border:0;background:transparent;font-size:26px;color:#47705a;cursor:pointer;padding:6px}.hisa-search-results{background:#fff;margin-top:8px;border:1px solid #dce9e0;border-radius:14px;box-shadow:0 10px 26px #143d2318;overflow:hidden;max-height:420px;overflow-y:auto}.hisa-search-result{display:flex;width:100%;justify-content:space-between;align-items:center;text-align:left;gap:10px;background:white;border:0;border-bottom:1px solid #edf3ee;padding:13px 16px;cursor:pointer;color:#153d29}.hisa-search-result:focus,.hisa-search-result:hover{background:#edf8f0}.hisa-search-result strong{font-size:14px}.hisa-search-result small{font-size:12px;color:#557362}.hisa-search-empty{padding:16px;color:#64766a}@media(max-width:600px){.hisa-global-search{padding:15px 12px 20px}.hisa-search-inner>label{font-size:16px}.hisa-search-field input{font-size:16px}}
+
+/* hisa-sticky-cart-style */
+/* Premium, mobile-safe product actions */
+#hisaStickyCart{position:fixed;left:0;right:0;bottom:0;z-index:2147483100;display:none;background:rgba(255,255,255,.98);border-top:1px solid #dce8de;box-shadow:0 -8px 30px rgba(15,68,39,.12);padding:10px max(14px,env(safe-area-inset-right)) calc(10px + env(safe-area-inset-bottom)) max(14px,env(safe-area-inset-left));align-items:center;gap:12px;box-sizing:border-box}
+#hisaStickyCart.is-visible{display:flex}#hisaStickyCart .hisa-sticky-info{min-width:0;flex:1}#hisaStickyCart .hisa-sticky-name{font-size:13px;font-weight:750;color:#18462e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}#hisaStickyCart .hisa-sticky-caption{font-size:11px;color:#657568}#hisaStickyCart button{background:#11683a;color:#fff;border:0;border-radius:13px;font-size:14px;font-weight:750;padding:14px 19px;min-height:48px;white-space:nowrap;box-shadow:0 5px 12px rgba(15,97,48,.18);cursor:pointer}
+body.hisa-has-sticky{padding-bottom:84px!important}#productsGrid .product .bottom>.btn{background:#126b3d!important;color:#fff!important;border-radius:12px!important;min-height:44px;padding:10px 12px!important;box-shadow:0 4px 12px rgba(17,91,52,.12)}#productsGrid .product .bottom>.btn:active,#hisaStickyCart button:active{transform:scale(.98)}
+@media(max-width:600px){#hisaStickyCart{gap:8px}#hisaStickyCart button{padding:12px 14px}#productsGrid .product .bottom{display:flex;flex-direction:column;align-items:stretch;gap:9px}#productsGrid .product .bottom>.btn{width:100%;font-size:12px}}
+
+/* hisa-address-checkout-premium-v2 */
+#hisa-address-book{background:#f4faf6!important;border:1px solid #c9e3d0!important;border-radius:18px!important;padding:16px!important}
+#hisa-address-book h3{font-size:19px!important;margin-bottom:10px!important}
+#hisa-address-book .hisa-address-card{border:1px solid #d4e4d8;border-radius:14px;padding:14px;cursor:pointer;align-items:center}
+#hisa-address-book .hisa-address-card:has(input:checked){border:2px solid #167a48;background:#effaf2;box-shadow:0 2px 12px #11633a14}
+#hisa-address-book .hisa-address-info{overflow-wrap:anywhere;min-width:0;flex:1}
+#hisa-address-book .hisa-address-actions button,#hisa-new-address{min-height:42px;border-radius:10px;cursor:pointer}
+#hisa-new-address{width:100%;background:#fff;border:2px dashed #16824a;color:#145f38;font-weight:800;margin-top:10px;padding:12px}
+#hisaCheckoutStep:not(.hisa-address-editing) > label:has(#customer),#hisaCheckoutStep:not(.hisa-address-editing) > label:has(#mobile),#hisaCheckoutStep:not(.hisa-address-editing) > label:has(#address),#hisaCheckoutStep:not(.hisa-address-editing) > label:has(#pin),#hisaCheckoutStep:not(.hisa-address-editing) > label:has(#hisaShipZone){position:absolute!important;width:1px!important;height:1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+#hisaCheckoutStep.hisa-address-editing > label:has(#customer),#hisaCheckoutStep.hisa-address-editing > label:has(#mobile),#hisaCheckoutStep.hisa-address-editing > label:has(#address),#hisaCheckoutStep.hisa-address-editing > label:has(#pin),#hisaCheckoutStep.hisa-address-editing > label:has(#hisaShipZone){position:static!important;width:auto!important;height:auto!important;clip-path:none!important;white-space:normal!important}
+@media(max-width:600px){#hisa-address-book .hisa-address-card{flex-wrap:wrap}#hisa-address-book .hisa-address-actions{width:100%;display:flex;gap:10px}}
+
+/* Hisa Organic: mobile performance and accessibility refinements */
+html{scroll-behavior:auto;-webkit-text-size-adjust:100%}body{overflow-x:hidden}img{max-width:100%;height:auto}button,a,input,select{touch-action:manipulation}button{cursor:pointer}input,select,textarea{font-size:16px}img[loading="lazy"]{content-visibility:auto} @media(max-width:700px){.nav{padding:12px 14px;gap:8px}button,input,select{min-height:40px} .card,.product-card{min-width:0} h1,h2,h3{overflow-wrap:break-word} } @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* hisa-final-touch-2026 */
+/* Non-destructive visual finishing; preserves existing product and checkout handlers. */
+:root{--hisa-focus:#157a4b;--hisa-touch:44px}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{overflow-x:hidden;text-rendering:optimizeLegibility}
+img{max-width:100%;height:auto}
+button,input,select,textarea{font:inherit}
+button,[role="button"],a,select{touch-action:manipulation}
+button:not(:disabled){cursor:pointer}
+:where(a,button,input,select,textarea,[tabindex]):focus-visible{outline:3px solid var(--hisa-focus)!important;outline-offset:3px!important}
+:where(button,input,select,textarea){max-width:100%}
+#hisaSearchInput{min-height:46px;font-size:16px!important}
+#hisa-menu-panel button,.hisa-menu-panel button{min-height:44px}
+#hisaStickyCart{padding-bottom:max(10px,env(safe-area-inset-bottom));box-sizing:border-box}
+#hisaStickyAction{min-height:44px}
+.hisa-final-skip{position:fixed;z-index:999999;top:-80px;left:12px;background:#fff;color:#125d38;padding:10px 14px;border-radius:9px;box-shadow:0 3px 16px #0002}
+.hisa-final-skip:focus{top:10px}
+@media(max-width:600px){
+ body{width:100%;max-width:100vw}
+ #hisaSearchInput{width:100%;box-sizing:border-box}
+ .hisa-menu-panel{max-width:min(94vw,360px);overflow-y:auto;max-height:75dvh}
+ #hisaStickyCart{max-width:100vw}
+ #hisaStickyCart .hisa-sticky-name{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ input,select,textarea{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* hisa-natural-3d-photo-finish */
+/* Light studio backdrop, natural shadow and subtle depth for ALL existing product photos. */
+.product .thumb, .detail-photo, .hisa-herbal-photo, .hisa-wax-photo,
+.hhd-image, .liquid-bottle-wrap, .hisa-candle-image-wrap,
+.hisa-paraffin-photo {
+  position:relative;
+  isolation:isolate;
+  background-color:#f8faf6;
+  background-image:linear-gradient(155deg,rgba(255,255,255,.66),rgba(227,238,220,.19) 70%,rgba(213,225,204,.24));
+  border-radius:15px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.88),inset 0 -2px 6px rgba(49,83,41,.035),0 7px 18px rgba(33,69,30,.085);
+  overflow:hidden;
+}
+.product .thumb img, .detail-photo img, .hisa-herbal-photo img,
+.hisa-wax-photo img, .hhd-image img, .liquid-bottle-wrap img,
+.hisa-candle-image-wrap img, .hisa-paraffin-photo img {
+  display:block;
+  max-width:100%;
+  object-fit:contain;
+  filter:contrast(1.035) saturate(1.055) brightness(1.012) drop-shadow(0 7px 6px rgba(37,48,31,.12));
+  transition:transform .22s ease,filter .22s ease;
+  transform:translateZ(0);
+}
+@media (hover:hover) and (pointer:fine){
+ .product:hover .thumb img, .hisa-herbal-photo:hover img,
+ .hisa-wax-photo:hover img, .hhd-image:hover img,
+ .liquid-bottle-wrap:hover img, .hisa-candle-image-wrap:hover img {
+  transform:translateY(-3px) scale(1.018);
+  filter:contrast(1.045) saturate(1.07) brightness(1.018) drop-shadow(0 10px 8px rgba(37,48,31,.15));
+ }
+}
+@media(max-width:600px){
+ .product .thumb, .detail-photo, .hisa-herbal-photo, .hisa-wax-photo,
+ .hhd-image,.liquid-bottle-wrap,.hisa-candle-image-wrap,.hisa-paraffin-photo {
+  border-radius:11px;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.85),0 4px 11px rgba(33,69,30,.07);
+ }
+}
+@media(prefers-reduced-motion:reduce){
+ .product .thumb img,.detail-photo img,.hisa-herbal-photo img,.hisa-wax-photo img,
+ .hhd-image img,.liquid-bottle-wrap img,.hisa-candle-image-wrap img,.hisa-paraffin-photo img {transition:none!important;transform:none!important}
+}
+
+/* hisa-premium-detail-2026 */
+/* Premium product details: presentation only; existing prices and cart logic remain authoritative. */
+#productDetail,#fragranceDetail,#hisaHerbalDetail,#hisaWaxDetail,#hisaLiquidDetail{--hp-green:#096334;--hp-ink:#20362b;--hp-border:#e0e9e2;--hp-soft:#f4f9f4;color:var(--hp-ink)}
+#productDetail .detail-wrap,#fragranceDetail .wrap{max-width:1220px;margin:auto}
+#productDetail .detail-layout,#fragranceDetail .detail-layout{align-items:start;gap:clamp(20px,4vw,58px)}
+#productDetail .detail-photo,#fragranceDetail .detail-photo,#hisaHerbalDetail .hhd-image{border:1px solid var(--hp-border);background:linear-gradient(145deg,#f7faf6,#fff);border-radius:22px;overflow:hidden;box-shadow:0 12px 35px rgba(18,65,35,.09)}
+#productDetail .detail-photo img,#fragranceDetail .detail-photo img,#hisaHerbalDetail .hhd-image img{object-fit:contain;max-height:560px;transition:transform .3s ease}
+@media(hover:hover){#productDetail .detail-photo img:hover,#fragranceDetail .detail-photo img:hover{transform:scale(1.035)}}
+#productDetail .detail-info h2,#fragranceDetail .detail-info h2,#hisaHerbalDetail h1,#hisaWaxDetail h2{font-weight:800;letter-spacing:-.025em;line-height:1.16}
+#productDetail .detail-price{color:#08632e;font-weight:800}
+#productDetail .tier-picker button,#fragranceDetail .fragrance-detail-packs button,#hisaHerbalDetail .hhd-packs button,#hisaWaxDetail .hisa-wax-pack-choices button,#hisaLiquidDetail .hld-tier{border-radius:12px;min-height:54px;transition:box-shadow .2s,transform .2s}
+#productDetail .tier-picker button:focus-visible,#fragranceDetail button:focus-visible,#hisaHerbalDetail button:focus-visible,#hisaWaxDetail button:focus-visible,#hisaLiquidDetail button:focus-visible{outline:3px solid #79bd8b;outline-offset:2px}
+#productDetail .detail-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
+#productDetail .detail-actions button{min-height:52px;border-radius:12px;font-weight:800}
+.hisa-premium-trust{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:18px 0}
+.hisa-premium-trust span{background:#f4f9f4;border:1px solid #e0eae0;padding:12px 8px;border-radius:12px;text-align:center;font-size:12px;font-weight:700;line-height:1.4}
+.hisa-premium-guide{margin:26px 0;border:1px solid #e0e9e2;border-radius:18px;overflow:hidden;background:#fff}
+.hisa-premium-tabs{display:flex;gap:4px;overflow-x:auto;padding:9px;background:#f3f8f3}
+.hisa-premium-tabs button{white-space:nowrap;min-height:42px;padding:10px 16px;border:0;border-radius:10px;background:transparent;color:#24422f;font-weight:700;cursor:pointer}
+.hisa-premium-tabs button[aria-selected=true]{background:#0a6534;color:#fff}
+.hisa-premium-panel{padding:20px;line-height:1.7;font-size:14px}
+.hisa-premium-panel[hidden]{display:none}
+.hisa-premium-panel h3{margin:0 0 10px;font-size:19px}
+.hisa-premium-panel p{margin:7px 0}
+.hisa-premium-mini{font-size:12px;color:#5d6c62;margin:8px 0 15px}
+#hisaWaxDetail .hisa-wax-shell,#hisaHerbalDetail .hhd-wrap,#hisaLiquidDetail .hld-panel{box-shadow:0 18px 65px rgba(15,55,31,.16);border-radius:22px}
+#hisaWaxDetail .hisa-wax-photo{border-radius:16px;object-fit:contain;background:#f6faf5}
+.hisa-premium-secondary{display:block;width:100%;margin-top:10px;min-height:48px;border:1.5px solid #11673a!important;border-radius:11px!important;background:#fff!important;color:#0b6134!important;font-weight:800!important;cursor:pointer}
+@media(max-width:700px){#productDetail .detail-layout,#fragranceDetail .detail-layout{gap:18px}#productDetail .detail-photo img,#fragranceDetail .detail-photo img{max-height:370px}#productDetail .detail-actions{grid-template-columns:1fr}#productDetail .detail-actions button{width:100%}.hisa-premium-trust{grid-template-columns:repeat(3,minmax(0,1fr))}.hisa-premium-trust span{font-size:11px;padding:10px 4px}.hisa-premium-panel{padding:15px}.hisa-premium-tabs button{font-size:12px;padding:9px 12px}}
+@media(prefers-reduced-motion:reduce){#productDetail .detail-photo img,#fragranceDetail .detail-photo img{transition:none}}
+
+/* hisa-all-soap-3d-gallery */
+/* Subtle dimensional presentation; preserve original photos and the original product detail layout. */
+#productDetail .detail-photo{perspective:1100px;transform-style:preserve-3d}
+#productDetail #detailImage{display:block;backface-visibility:hidden;transform:translateZ(0);filter:drop-shadow(0 13px 17px rgba(20,65,36,.13));transition:transform .3s ease,filter .3s ease;border-radius:16px}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){#productDetail .detail-photo:hover #detailImage{transform:translateY(-3px) scale(1.012);filter:drop-shadow(0 19px 23px rgba(20,65,36,.2))}}
+#productDetail .hisa-transparent-gallery{display:flex;gap:12px;margin-top:14px;align-items:stretch}
+#productDetail .hisa-transparent-gallery[hidden]{display:none!important}
+#productDetail .hisa-gallery-thumb{width:92px;min-height:85px;border:2px solid #dce8d9;border-radius:13px;background:linear-gradient(145deg,#fff,#f4f8f0);padding:5px;box-shadow:0 6px 15px rgba(30,70,39,.1);cursor:pointer;transition:box-shadow .2s ease,transform .2s ease}
+#productDetail .hisa-gallery-thumb[aria-pressed="true"]{border-color:#226b38;box-shadow:0 5px 17px rgba(25,105,48,.22)}
+#productDetail .hisa-gallery-thumb img{width:100%;height:78px;object-fit:contain;border-radius:8px}
+@media(max-width:600px){#productDetail .hisa-gallery-thumb{width:82px;min-height:76px}#productDetail .hisa-gallery-thumb img{height:68px}}
+@media(prefers-reduced-motion:reduce){#productDetail #detailImage,#productDetail .hisa-gallery-thumb{transition:none!important}}
+
+/* hisa-soap-swipe-style */
+/* Native vertical scrolling remains enabled; horizontal swipes switch gallery images. */
+#productDetail #detailImage{touch-action:pan-y pinch-zoom;user-select:none;-webkit-user-select:none;-webkit-user-drag:none}
+#productDetail .detail-photo{overscroll-behavior-x:contain}
+#productDetail .hisa-gallery-thumb{touch-action:manipulation}
+
+/* hisa-mobile-four-thumbnails-final */
+/* Keep all four soap-base gallery previews in one compact mobile row. */
+@media (max-width: 767px) {
+  #productDetail #hisaTransparentGallery:not([hidden]) {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    grid-template-rows: auto !important;
+    gap: 6px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    flex-wrap: nowrap !important;
+    padding: 6px 0 !important;
+    margin: 8px 0 12px !important;
+    overflow: visible !important;
+  }
+  #productDetail #hisaTransparentGallery .hisa-gallery-thumb {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: auto !important;
+    aspect-ratio: 1 / 1 !important;
+    padding: 3px !important;
+    margin: 0 !important;
+    border-radius: 10px !important;
+    box-sizing: border-box !important;
+  }
+  #productDetail #hisaTransparentGallery .hisa-gallery-thumb img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+}
+
+/* hisa-hd-product-photos */
+/* Hisa Organic: consistent crisp catalog imagery and premium photo surfaces */
+.category-card img,.product-card img,.soap-visual img,.frag-card img,.liquid-six-card img,.hisa-herbal-photo,.hisa-wax-photo,.hhd-image img,.detail-photo img{
+  image-rendering:auto;
+  backface-visibility:hidden;
+  -webkit-backface-visibility:hidden;
+}
+.category-card .category-icon,.soap-visual .thumb,.frag-bottle,.liquid-six-card .hisa-milky-photo{
+  overflow:hidden;
+}
+@media(max-width:650px){
+  .category-card img,.product-card img,.soap-visual img,.frag-card img,.liquid-six-card img,.hisa-herbal-photo,.hisa-wax-photo{object-position:center center}
+}
+
+/* hisa-fast-mobile-2026 */
+/* Hisa Organic mobile performance polish: no change to checkout or pricing */
+@media (max-width: 600px) {
+  html { -webkit-text-size-adjust: 100%; }
+  img { max-width:100%; }
+  button, a, select { -webkit-tap-highlight-color:transparent; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior:auto !important; animation-duration:.01ms !important; transition-duration:.01ms !important; }
+}
+
+/* hisa-shampoo-three-thumbs */
+.hisa-shampoo-thumbs{display:grid!important;grid-template-columns:repeat(3,minmax(0,72px));gap:9px!important;justify-content:center}.hisa-shampoo-thumbs button{width:100%!important;min-width:0;touch-action:manipulation}#hisaShampooMain{touch-action:pan-y}
+
+/* hisa-liquid-hd-mobile-display-v1 */
+/* Keep every original embedded photo intact; show the full frame, not a cropped preview. */
+#hisaShampooGallery{width:100%;max-width:680px;margin:14px auto 22px;min-width:0}
+#hisaShampooMain{display:block;width:100%;height:auto;max-height:none!important;aspect-ratio:auto;object-fit:contain!important;object-position:center;image-rendering:auto!important;filter:none!important;transform:none!important;border-radius:12px;background:#fff;box-shadow:0 5px 18px rgba(16,75,38,.10)}
+#hisaShampooGallery .hisa-shampoo-thumbs{display:grid!important;grid-template-columns:repeat(3,minmax(0,76px));gap:10px!important;justify-content:center;margin:12px 0 4px}
+#hisaShampooGallery .hisa-shampoo-thumbs button{width:76px!important;height:80px!important;min-width:0;max-width:100%;padding:4px;border-radius:10px;touch-action:manipulation}
+#hisaShampooGallery .hisa-shampoo-thumbs img{width:100%;height:100%;object-fit:contain!important;image-rendering:auto}
+@media(max-width:650px){
+ #hisaShampooGallery{max-width:100%;margin:8px auto 16px;padding:0 2px;box-sizing:border-box}
+ #hisaShampooMain{max-height:none!important;width:100%!important;height:auto!important;object-fit:contain!important;border-radius:9px}
+ #hisaShampooGallery .hisa-shampoo-thumbs{grid-template-columns:repeat(3,minmax(0,68px));gap:8px!important}
+ #hisaShampooGallery .hisa-shampoo-thumbs button{width:68px!important;height:72px!important}
+}
+
+#liquidSix .hisa-qty-stepper{display:flex;align-items:center;gap:0;border:1px solid #b9cfc0;border-radius:10px;overflow:hidden;background:#fff;flex-shrink:0}
+#liquidSix .hisa-qty-stepper button{width:38px;height:42px;border:0;background:#edf6ef;color:#075b33;font-size:23px;font-weight:700;cursor:pointer;touch-action:manipulation}
+#liquidSix .hisa-qty-stepper button:active{background:#cfe9d7}
+#liquidSix .hisa-qty-stepper .liquid-order-qty{width:46px;max-width:none;min-width:0;border:0;border-left:1px solid #dce8df;border-right:1px solid #dce8df;border-radius:0;padding:8px 2px;appearance:textfield;-moz-appearance:textfield}
+#liquidSix .hisa-qty-stepper .liquid-order-qty::-webkit-inner-spin-button,#liquidSix .hisa-qty-stepper .liquid-order-qty::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+@media(max-width:380px){#liquidSix .hisa-qty-stepper button{width:32px;height:38px}}
+
+/* Editable quantities in the shared shopping cart */
+#cartItems .hisa-cart-qty{display:flex;align-items:center;gap:5px;margin-top:8px;flex-wrap:wrap}
+#cartItems .hisa-cart-qty button{height:38px;min-width:38px;border:1px solid #b9d1bf;border-radius:8px;background:#edf6ef;color:#135f38;font-size:20px;font-weight:700;cursor:pointer}
+#cartItems .hisa-cart-qty input{height:38px;width:76px;border:1px solid #a6bea9;border-radius:8px;text-align:center;font-size:16px;font-weight:650;background:#fff;color:#183b28}
+#cartItems .hisa-cart-qty .hisa-unit{font-size:12px;color:#64786b}
+#cartItems .hisa-cart-qty .hisa-cart-apply{font-size:13px;padding:0 9px;background:#17683e;color:white}
+#cartItems .hisa-cart-qty .hisa-cart-remove{font-size:12px;padding:0 9px;background:#fff5f5;color:#9d2828;border-color:#efc5c5}
+
+.hisa-pack-select{display:block;width:100%;max-width:310px;margin:9px auto;padding:11px;border:1px solid #a9c6b2;border-radius:9px;background:#fff;color:#214e35;font-size:14px}.frag-card .hisa-frag-cart{width:100%;margin-top:7px}@media(max-width:600px){.hisa-pack-select{font-size:16px}}
+
+#fragranceGrid .frag-card > button:not(.hisa-frag-cart), #fragranceDetail .detail-info > button:not(#hisaFragDetailCart){display:none!important}
+.hisa-frag-price{display:block;margin:9px 0 12px;color:#175c3d;font-weight:750;font-size:1.16rem}
+.hisa-pack-select{width:100%;max-width:330px;padding:11px;border:1px solid #a7bcb0;border-radius:9px;background:white;font-size:15px}
+#fragranceDetail .hisa-pack-select{display:block;margin:12px 0 4px}
+#fragranceGrid .hisa-frag-cart{width:100%;margin-top:5px}
+
+.hisa-pack-select{display:none!important}
+.hisa-pack-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:12px 0 7px;width:100%}
+.hisa-pack-tile{min-width:0;cursor:pointer;border:1.5px solid #b8cfc1;border-radius:10px;background:#fff;color:#1c4d35;padding:11px 4px;font:inherit;font-weight:700;text-align:center;line-height:1.5}
+.hisa-pack-tile small{display:block;font-size:12px;font-weight:600}
+.hisa-pack-tile[aria-pressed="true"]{border-color:#17633e;background:#e6f4ea;box-shadow:inset 0 0 0 1px #17633e}
+.hisa-frag-price{font-size:17px!important;margin:8px 0!important}
+
+/* hisa-fragrance-listing-cleanup */
+/* Listing = photo/name/details only. Pack controls exclusively in opened details. */
+#fragranceGrid .frag-card .hisa-pack-tiles,
+#fragranceGrid .frag-card .hisa-pack-select,
+#fragranceGrid .frag-card .hisa-frag-price,
+#fragranceGrid .frag-card .hisa-frag-cart {display:none!important}
+#fragranceGrid .frag-card {cursor:pointer}
+#fragranceGrid .frag-card h3 {overflow-wrap:break-word}
+
+/* hisa-frag-shipping-style */
+#hisaFragranceShippingNote{margin:10px 0 14px;color:#18573a;font-size:15px;font-weight:650;background:#edf7ef;border:1px solid #c9e5d1;border-radius:9px;padding:10px 12px}
+
+#hisaLiquidCategories{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
+.hisa-liquid-category{border:1px solid #c9e2d3;background:#f1faf5;border-radius:16px;padding:22px 8px;min-height:120px;color:#145a37;font-weight:800;cursor:pointer;font-size:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}
+.hisa-liquid-category span{font-size:30px}.hisa-liquid-category:active{background:#d9f3e5}
+#hisaLiquidBack{background:#e8f5ec;color:#145a37;border:0;border-radius:10px;padding:11px 17px;font-weight:700;margin:10px 0;cursor:pointer}
+@media(max-width:600px){#hisaLiquidCategories{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.hisa-liquid-category{min-height:105px;font-size:14px;padding:14px 6px}}
+
+/* hisa-liquid-group-cards-fix */
+@media(max-width:700px){#liquidSix .liquid-six-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}#liquidSix .liquid-six-card{padding:9px!important;min-width:0}#liquidSix .liquid-six-card h3{font-size:14px!important;line-height:1.35}#liquidSix .liquid-six-card .liquid-bottle-wrap{max-width:100%;overflow:hidden}}
+
+/* hisa-direct-fragrance-pack-style */
+#fragranceDetail .hisa-pack-tiles{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+#fragranceDetail .hisa-pack-tile{min-height:68px;touch-action:manipulation}
+#fragranceDetail #hisaFragDetailCart{display:none!important}
+
+/* hisa-typed-quantity-css */
+#detailQty{width:78px;min-width:0;padding:9px 5px;text-align:center;border:1px solid #b6cbbd;border-radius:9px;font:700 18px Arial,sans-serif;background:#fff;color:#173d29}#detailQty:focus,.hisa-cart-qty input:focus,.hisa-qty input:focus{outline:2px solid #277a4b;outline-offset:1px}.detail-qty{flex-wrap:wrap}.hisa-cart-qty input{min-width:55px!important;max-width:90px!important;font-size:16px!important;text-align:center}.hisa-extra-card .hisa-qty input{width:76px;max-width:100%;padding:8px 3px;text-align:center;font-size:16px}@media(max-width:650px){.detail-qty{gap:8px}#detailQty{width:68px;font-size:16px}.hisa-cart-qty{flex-wrap:wrap}}
+
+/* hisa-frag-quantity-style */
+#fragranceDetail .hisa-frag-order-panel{margin:14px 0;padding:14px;border:1px solid #c9ddcf;border-radius:14px;background:#f7fbf8}
+#fragranceDetail .hisa-frag-order-panel .hisa-pack-tiles{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin:10px 0!important}
+#fragranceDetail .hisa-frag-order-panel .hisa-pack-tile{padding:11px 3px;border:1.5px solid #c3d8c9;border-radius:10px;background:white;color:#17452b;font-weight:700;font-size:13px;min-height:64px}
+#fragranceDetail .hisa-frag-order-panel .hisa-pack-tile.selected{border:2px solid #167d45;background:#e8f7ed}
+#fragranceDetail .hisa-frag-order-panel .hisa-pack-tile small{display:block;margin-top:5px;font-size:14px}
+#fragranceDetail .hisa-frag-order-panel .hisa-frag-qtyrow{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:13px 0}
+#fragranceDetail .hisa-frag-order-panel input{width:90px;padding:10px;border:1px solid #91b69c;border-radius:9px;text-align:center;font-size:18px;font-weight:bold}
+#fragranceDetail .hisa-frag-order-panel .hisa-frag-submit{width:100%;padding:14px;border:0;border-radius:10px;background:#167d45;color:white;font-size:16px;font-weight:700}
+#fragranceDetail .hisa-frag-order-panel .hisa-frag-summary{margin:8px 0;font-weight:700}
+
+/* hisa-frag-horizontal-stepper */
+#fragranceDetail .hisa-frag-stepper{display:flex;align-items:center;gap:0;flex-shrink:0;border:1px solid #91b69c;border-radius:10px;overflow:hidden;background:#fff}
+#fragranceDetail .hisa-frag-stepper button{width:42px;height:44px;min-width:42px;border:0;background:#e8f5eb;color:#17643a;font-size:25px;font-weight:700;cursor:pointer;touch-action:manipulation}
+#fragranceDetail .hisa-frag-stepper button:active{background:#c6e9d0}
+#fragranceDetail .hisa-frag-stepper input{width:58px!important;height:44px!important;min-width:0!important;margin:0!important;padding:4px!important;border:0!important;border-left:1px solid #c5ddcb!important;border-right:1px solid #c5ddcb!important;border-radius:0!important;text-align:center;font-size:17px!important;appearance:textfield;-moz-appearance:textfield}
+#fragranceDetail .hisa-frag-stepper input::-webkit-inner-spin-button,#fragranceDetail .hisa-frag-stepper input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+@media(max-width:420px){#fragranceDetail .hisa-frag-order-panel .hisa-frag-qtyrow{gap:8px;flex-wrap:wrap}#fragranceDetail .hisa-frag-stepper button{width:44px;min-width:44px}}
+
+.hisa-shared-cart-note{background:#eaf5ec;border:1px solid #b9dcc1;border-radius:10px;padding:11px 13px;color:#174b31;font-size:13px;line-height:1.5;margin:12px 0}
+
+#hisa-address-book{border:1px solid #cfe3d2;border-radius:15px;padding:14px;background:#f5fbf6;margin:0 0 14px}#hisa-address-book h3{margin:0 0 8px;font-size:17px;color:#155d37}.hisa-address-card{display:flex;gap:10px;align-items:flex-start;background:white;border:1px solid #dbe9dc;border-radius:11px;padding:10px;margin:8px 0}.hisa-address-card input{margin-top:5px;accent-color:#176f43}.hisa-address-card .hisa-address-info{flex:1;min-width:0;font-size:13px;overflow-wrap:anywhere}.hisa-address-card button,#hisa-new-address{border:1px solid #aacbb2;border-radius:8px;background:white;color:#145b37;padding:8px 10px;cursor:pointer;font-weight:650}#hisa-address-book .hisa-address-actions{display:flex;gap:6px;flex-wrap:wrap}#hisa-address-book .hisa-address-help{font-size:12px;color:#526657;margin:8px 0 0}@media(max-width:480px){.hisa-address-card{flex-wrap:wrap}.hisa-address-card .hisa-address-actions{width:100%;justify-content:flex-end}}
+
+.hisa-wax-clickable{cursor:pointer;touch-action:manipulation}.hisa-wax-clickable:focus-visible{outline:3px solid #16763b;outline-offset:3px}
+#hisaWaxDetail{position:fixed;inset:0;z-index:2147483000;background:#fff;overflow-y:auto;overscroll-behavior:contain;display:none;color:#183c2b}
+#hisaWaxDetail.open{display:block}.hisa-wax-shell{max-width:740px;margin:auto;padding:16px 16px 44px}.hisa-wax-top{display:flex;align-items:center;gap:12px;position:sticky;top:0;background:#fff;padding:10px 0;z-index:2;border-bottom:1px solid #e6eae7}
+.hisa-wax-back{background:#eaf5ee;border:0;border-radius:10px;padding:12px 17px;font-size:16px;color:#145b32;font-weight:700}.hisa-wax-photo{display:block;width:100%;height:min(54vh,420px);object-fit:contain;margin:12px auto;border-radius:14px;background:#fafafa}.hisa-wax-name{font-size:clamp(22px,5vw,30px);margin:12px 0}.hisa-wax-description{line-height:1.7;color:#3d5147;font-size:16px}.hisa-wax-purchase{border:1px solid #dce9e0;border-radius:14px;padding:15px;margin-top:18px}.hisa-wax-purchase button{min-height:44px}.hisa-wax-buy{background:#16763b;color:white;border:0;border-radius:9px;padding:12px 18px;font-weight:700;width:100%;margin-top:12px}.hisa-wax-qty{display:flex;align-items:center;gap:8px}.hisa-wax-qty button{border:1px solid #c8d9ce;background:#f4f8f5;border-radius:8px;width:48px;font-size:23px}.hisa-wax-qty input{width:84px;text-align:center;padding:11px;border:1px solid #c8d9ce;border-radius:8px;font-size:18px}
+
+.hisa-wax-pack-choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}.hisa-wax-pack-choices button{border:2px solid #c8ddcf;border-radius:12px;padding:16px 6px;background:#fff;color:#145c35;font-size:15px;font-weight:750;touch-action:manipulation}.hisa-wax-pack-choices button.selected{border-color:#147a3d;background:#e9f7ee}.hisa-wax-list-price{font-size:14px;font-weight:750;color:#116334;margin:8px 0}#hisaWaxSelectedTotal{font-weight:750;color:#146b3c;font-size:17px}
+
+/* hisa-pin-auto-style */
+#hisaShipZone{display:none!important}#hisaPinAutoStatus{display:block;font-size:13px;margin:5px 0;color:#195a39;font-weight:600}#hisaPinAutoStatus[data-error="true"]{color:#a13b28}#hisaPinManualFallback{display:none;margin-top:7px}#hisaPinManualFallback.show{display:block}#hisaPinManualFallback select{width:100%;min-height:44px}
+
+/* hisa-herbal-detail-style */
+/* Herbal catalogue: photo + title only; pack selection belongs on the detail screen. */
+#hisaExtraProducts .hisa-extra-card:has(.hisa-herbal-photo){cursor:pointer;transition:transform .16s ease,box-shadow .16s ease}
+#hisaExtraProducts .hisa-extra-card:has(.hisa-herbal-photo):hover{transform:translateY(-2px);box-shadow:0 9px 26px #153d2720}
+#hisaExtraProducts .hisa-extra-card:has(.hisa-herbal-photo) .hisa-powder-packs,
+#hisaExtraProducts .hisa-extra-card:has(.hisa-herbal-photo) .hisa-powder-actions{display:none!important}
+#hisaHerbalDetail{display:none;position:fixed;inset:0;z-index:99999;background:#fff;overflow:auto;overscroll-behavior:contain}
+#hisaHerbalDetail.is-open{display:block}
+.hhd-wrap{max-width:1060px;margin:auto;padding:18px 16px 75px}
+.hhd-back{border:0;background:#edf5ef;color:#155333;border-radius:12px;padding:12px 17px;font-weight:700;cursor:pointer;margin-bottom:20px}
+.hhd-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:start}
+.hhd-image{background:#f6f9f7;border:1px solid #e1e9e3;border-radius:20px;padding:20px;text-align:center}
+.hhd-image img{width:100%;max-width:440px;max-height:520px;object-fit:contain}
+.hhd-info h1{font-size:clamp(25px,3vw,38px);color:#153f2a;margin:8px 0 12px;line-height:1.15}
+.hhd-info p{color:#52635a;line-height:1.65}
+.hhd-packs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:18px 0}
+.hhd-packs button{border:1px solid #bfd2c4;border-radius:12px;background:white;padding:13px 4px;font-weight:700;color:#204b32;cursor:pointer}
+.hhd-packs button.selected{background:#e3f2e7;border:2px solid #20824b}
+.hhd-qty{display:flex;align-items:center;gap:12px;margin:15px 0}
+.hhd-qty button{width:44px;height:44px;border:1px solid #c5d6c9;border-radius:10px;background:#f3f8f4;font-size:24px}
+.hhd-qty input{width:75px;height:44px;text-align:center;border:1px solid #c5d6c9;border-radius:10px;font-size:17px}
+.hhd-add{background:#197647;color:white;border:0;border-radius:12px;padding:16px 22px;font-weight:750;width:100%;font-size:16px;cursor:pointer}
+@media(max-width:650px){.hhd-grid{grid-template-columns:1fr;gap:18px}.hhd-image{padding:10px}.hhd-image img{max-height:330px}.hhd-wrap{padding:12px 14px 55px}}
+
+/* hisa-cart-toast-css */
+#hisaAddedToast{position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);z-index:2147483645;background:#115d3c;color:white;padding:13px 18px;border-radius:16px;box-shadow:0 8px 28px #0c3e2c40;font:600 14px/1.4 system-ui,sans-serif;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;max-width:calc(100vw - 32px);text-align:center}#hisaAddedToast.visible{opacity:1;transform:translate(-50%,0)}
+
+.hisa-order-review{background:#f5fbf7;border:1px solid #d3e9dc;border-radius:16px;padding:15px;margin:12px 0 20px;color:#173e2c}
+.hisa-order-review h3{margin:0 0 10px;font-size:19px}
+.hisa-review-line{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid #e0eae4;font-size:14px}
+.hisa-review-line strong{font-size:14px}
+#hisaCheckoutOrderTotal{margin-top:12px;font-weight:800;font-size:18px}
+
+#hisaPlusBar{position:relative;z-index:3;background:#f4fbf6;border-bottom:1px solid #dceee2;padding:10px 14px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+.hisaPlusBtn{background:#fff;color:#17613b;border:1px solid #b7d9c5;border-radius:999px;padding:10px 14px;font:600 13px system-ui;cursor:pointer;min-height:42px}
+#hisaPlusPanel{display:none;position:fixed;inset:0;z-index:999999;background:#092818a6;padding:16px;overflow:auto;align-items:flex-start;justify-content:center}
+#hisaPlusPanel.open{display:flex}
+#hisaPlusInner{background:white;color:#173d2a;width:min(100%,580px);margin:30px auto;border-radius:20px;padding:22px;box-shadow:0 20px 65px #09281850;max-height:85vh;overflow:auto;font:15px/1.6 system-ui}
+#hisaPlusInner h2{margin:0 0 12px;color:#145a35;font-size:23px}#hisaPlusInner h3{margin:14px 0 5px;font-size:17px}#hisaPlusInner button{border:1px solid #b5d6c2;background:#f5fbf7;color:#145a35;border-radius:10px;padding:10px 13px;cursor:pointer;min-height:42px}#hisaPlusInner .hisaPrimary{background:#12643c;color:white}
+
+.hisaPlusRow{padding:10px 0;border-bottom:1px solid #e5efe9;display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.hisaPlusMuted{font-size:13px;color:#627c6c}.hisaPlusInput{width:100%;padding:12px;border:1px solid #bddac7;border-radius:10px;font-size:16px}
+@media(max-width:550px){#hisaPlusBar{gap:6px;padding:9px 5px}.hisaPlusBtn{font-size:12px;padding:9px 10px}#hisaPlusInner{margin:10px auto;padding:17px}}
+
+/* hisa-wax-details-only-fix */
+/* Wax category is a catalogue. Pack and quantity controls belong to product details. */
+#hisaExtraProducts .hisa-wax-clickable input,
+#hisaExtraProducts .hisa-wax-clickable select,
+#hisaExtraProducts .hisa-wax-clickable .hisa-qty,
+#hisaExtraProducts .hisa-wax-clickable .hisa-extra-qty,
+#hisaExtraProducts .hisa-wax-clickable [class*="quantity"],
+#hisaExtraProducts .hisa-wax-clickable [class*="qty"],
+#hisaExtraProducts .hisa-wax-clickable button:not(.hisa-wax-view-details){display:none!important}
+#hisaExtraProducts .hisa-wax-clickable{cursor:pointer;touch-action:manipulation}
+#hisaExtraProducts .hisa-wax-view-details{display:block!important;width:100%;min-height:44px;margin-top:12px;background:#17683e;color:#fff;border:0;border-radius:10px;font-weight:750;cursor:pointer}
+#hisaWaxViewCartOrder{display:block;width:100%;min-height:48px;margin-top:10px;background:#fff;color:#17683e;border:2px solid #17683e;border-radius:10px;font-weight:750;font-size:15px;cursor:pointer}
+@media(max-width:600px){#hisaWaxDetail .hisa-wax-shell{padding-bottom:80px}#hisaExtraProducts .hisa-wax-view-details{font-size:14px}}
+
+/* hisa-herbal-cart-flow-v2 */
+/* Herbal catalogue cards lead to details; selection and purchase live in details. */
+#hisaExtraProducts .hisa-herbal-detail-card input,
+#hisaExtraProducts .hisa-herbal-detail-card select,
+#hisaExtraProducts .hisa-herbal-detail-card [class*="qty"],
+#hisaExtraProducts .hisa-herbal-detail-card [class*="quantity"],
+#hisaExtraProducts .hisa-herbal-detail-card button:not(.hisa-herbal-view-details){display:none!important}
+#hisaExtraProducts .hisa-herbal-detail-card{cursor:pointer;touch-action:manipulation}
+#hisaExtraProducts .hisa-herbal-view-details{display:block!important;width:100%;min-height:44px;margin-top:12px;border:0;border-radius:10px;background:#17683e;color:white;font-size:14px;font-weight:750;cursor:pointer}
+#hisaHerbalViewCartOrder{display:block;width:100%;min-height:48px;margin-top:10px;background:#fff;color:#17683e;border:2px solid #17683e;border-radius:11px;font-size:15px;font-weight:750;cursor:pointer}
+#hisaHerbalDetail .hhd-info{padding-bottom:26px}
+@media(max-width:650px){#hisaHerbalDetail .hhd-wrap{padding-bottom:100px}#hisaHerbalViewCartOrder{font-size:16px}}
+
+/* hisa-fragrance-liquid-view-cart-style */
+.hisa-view-cart-secondary{display:block;width:100%;min-height:46px;margin-top:9px;padding:11px 12px;border:2px solid #17683e;border-radius:11px;background:#fff;color:#17683e;font-size:15px;font-weight:750;text-align:center;cursor:pointer;touch-action:manipulation}
+.hisa-view-cart-secondary:focus-visible{outline:3px solid #8bc6a0;outline-offset:2px}
+#liquidSix .hisa-view-cart-secondary{font-size:14px}
+@media(max-width:650px){.hisa-view-cart-secondary{min-height:48px;font-size:15px}}
+
+/* hisa-transparent-gallery-css */
+.hisa-transparent-gallery{display:flex;gap:12px;justify-content:flex-start;margin-top:12px;flex-wrap:wrap}.hisa-transparent-gallery[hidden]{display:none!important}.hisa-gallery-thumb{width:76px;height:84px;border:2px solid #dbe7dc;background:white;border-radius:12px;overflow:hidden;padding:3px;cursor:pointer;transition:border-color .15s,transform .15s}.hisa-gallery-thumb[aria-pressed="true"]{border-color:#19683a;box-shadow:0 0 0 2px #cce8d3}.hisa-gallery-thumb img{width:100%;height:100%;object-fit:contain;border-radius:8px}.hisa-gallery-thumb:focus-visible{outline:3px solid #19683a;outline-offset:3px}@media(max-width:600px){.hisa-gallery-thumb{width:66px;height:74px}}
+
+/* hisa-soap-gallery-3d-third */
+#productDetail .detail-photo>img#detailImage{object-fit:contain;filter:drop-shadow(0 16px 22px rgba(18,58,28,.18));border-radius:18px;transition:transform .28s ease,filter .28s ease}#productDetail .detail-photo>img#detailImage:hover{transform:perspective(1000px) rotateY(-2deg) translateY(-3px);filter:drop-shadow(0 22px 25px rgba(18,58,28,.24))}#hisaTransparentGallery .hisa-gallery-thumb{box-shadow:0 5px 12px rgba(10,55,20,.10);background:linear-gradient(145deg,#fff,#f1f7ee)}#hisaTransparentGallery .hisa-gallery-thumb[aria-pressed="true"]{box-shadow:0 6px 17px rgba(15,100,45,.22);transform:translateY(-2px)}@media(prefers-reduced-motion:reduce){#productDetail .detail-photo>img#detailImage{transition:none}#productDetail .detail-photo>img#detailImage:hover{transform:none}}
+
+/* hisa-fourth-photo-clarity */
+#hisaTransparentGallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-width:100%;}
+#hisaTransparentGallery[hidden]{display:none!important}
+#hisaTransparentGallery .hisa-gallery-thumb{min-width:0;overflow:hidden;aspect-ratio:1/1;cursor:pointer;transform-style:preserve-3d;transition:transform .2s,box-shadow .2s}
+#hisaTransparentGallery .hisa-gallery-thumb img{width:100%;height:100%;object-fit:contain;display:block}
+#hisaTransparentGallery .hisa-gallery-thumb:focus-visible{outline:3px solid #177536;outline-offset:2px}
+#productDetail .detail-photo #detailImage{max-width:100%;height:auto;object-fit:contain}
+@media(max-width:430px){#hisaTransparentGallery{gap:5px}}
+@media(prefers-reduced-motion:reduce){#hisaTransparentGallery .hisa-gallery-thumb{transition:none}}
+
+/* hisa-cart-two-step-final-css */
+#drawer:not(.hisa-checkout-mode) #hisaCheckoutStep{display:none!important}
+#drawer.hisa-checkout-mode #hisaCheckoutStep{display:block!important}
+#drawer:not(.hisa-checkout-mode) #hisaProceedCheckout{display:block!important}
+#drawer.hisa-checkout-mode #hisaProceedCheckout{display:none!important}
+#hisaProceedCheckout{min-height:52px;border-radius:13px;font-weight:800;font-size:16px;cursor:pointer}
+#drawer .hisa-cart-step-hint{margin:9px 0 13px;color:#35654b;font-size:13px;font-weight:650}
+
+/* hisa-shampoo-gallery-style */
+#hisaShampooGallery{margin:12px auto 18px;max-width:510px}#hisaShampooGallery[hidden]{display:none!important}#hisaShampooMain{display:block;width:100%;height:auto;max-height:420px;object-fit:contain;background:#f8fbf7;border-radius:16px;box-shadow:0 8px 24px #123b2414} .hisa-shampoo-thumbs{display:flex;justify-content:center;gap:12px;margin:12px 0}.hisa-shampoo-thumbs button{width:72px;height:76px;padding:4px;border:2px solid #d8e7db;border-radius:12px;background:white;cursor:pointer}.hisa-shampoo-thumbs button.active{border-color:#146c3b}.hisa-shampoo-thumbs img{width:100%;height:100%;object-fit:contain}.hisa-shampoo-gallery img{image-rendering:auto}@media(max-width:600px){#hisaShampooMain{max-height:310px}.hisa-shampoo-thumbs button{width:62px;height:66px}}
+
+/* hisa-fast-mobile-paint-v1 */
+@media(max-width:768px){
+  img{max-width:100%;height:auto}
+  button,a,[role="button"]{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+  html{scroll-behavior:auto!important}
+}
